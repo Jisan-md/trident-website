@@ -1,27 +1,90 @@
 
-<div class="container" style="background-color: rgb(248, 139, 139);">
-    <h1>hi</h1>
-
-    <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
-    <i class="fa fa-facebook-official" aria-hidden="true"></i>
-    <i class="fa-solid fa-house"></i>
-    <i class="fa-brands fa-facebook"></i>
-    <i class="fa-solid fa-circle-up"></i>
-   <span> span tag</span><br>
-
-   <i class="fa-solid fa-house"></i>
-   <i class="fa fa-algolia	"></i>
-   <i class="fa fa-affiliatetheme	"></i>
-   <br>
-
-   <a href="https://www.facebook.com/intelliceptusa" class="text-white mx-2"
-   ><i class="fa fa-facebook" aria-hidden="true"></i
- ></a>
- <a href="https://twitter.com/intellicept" class="text-white mx-2"
-   ><i class="fa fa-twitter" aria-hidden="true"></i
- ></a>  
- <a href="https://www.linkedin.com/company/2329087/admin/" class="text-white mx-2"
-   ><i class="fa fa-linkedin" aria-hidden="true"></i
- ></a>
-
+<div class="navbar-area">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" routerLink="/">
+        <img src="assets/trident-logo.png" alt="logo" style="height: 50px" />
+      </a>
+      <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+        <span class="burger-menu">
+          <span class="top-bar"></span>
+          <span class="middle-bar"></span>
+          <span class="bottom-bar"></span>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse" [ngClass]="{'show': !isNavbarCollapsed}">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown" (click)="toggleDropdown('industry')">
+            <a class="nav-link dropdown-toggle" routerLink="#" (click)="toggleDropdown('industry'); $event.stopPropagation()">
+              Industry ERP Solutions
+            </a>
+            <ul class="dropdown-menu" [class.show]="activeDropdown === 'industry'">
+              <li><a class="dropdown-item" routerLink="/about">Retail</a></li>
+              <li><a class="dropdown-item" routerLink="/hospitality">Hospitality</a></li>
+              <li><a class="dropdown-item" routerLink="/ecommerce">Ecommerce</a></li>
+              <li><a class="dropdown-item" routerLink="/transport">Transport & Logistic</a></li>
+              <li><a class="dropdown-item" routerLink="/manufacturing">Manufacturing</a></li>
+              <li><a class="dropdown-item" routerLink="/real-estate">Real Estate & Contracting</a></li>
+              <li><a class="dropdown-item" routerLink="/education">Education</a></li>
+            </ul>
+          </li>
+          
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" routerLink="/about" routerLinkActive="active">
+              Professional Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/about">ERP Services</a></li>
+              <li><a class="dropdown-item" routerLink="blue-tag-advisory-team">CRM Services</a></li>
+              <li><a class="dropdown-item" routerLink="blue-tag-advisory-team">Staff Augmentation Services</a></li>
+              <li><a class="dropdown-item" routerLink="blue-tag-advisory-team">Business Intelligence</a></li>
+              <li><a class="dropdown-item" routerLink="blue-tag-advisory-team">Digital Transformation Services</a></li>
+              <li><a class="dropdown-item" routerLink="blue-tag-advisory-team">IBM Services</a></li>
+              <li><a class="dropdown-item" routerLink="blue-tag-advisory-team">Apps Development</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="javascript:void(0)">
+              Products
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/blue-tag-advisory">Advisory</a></li>
+              <li><a class="dropdown-item" routerLink="/sap-s4-hana">Implementation</a></li>
+              <li><a class="dropdown-item" routerLink="/application-managed-service">Managed Services</a></li>
+              <li><a class="dropdown-item" routerLink="/co-innovation-service">Co-innovation Service</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="javascript:void(0)">
+              Company
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/events">Events</a></li>
+              <li><a class="dropdown-item" routerLink="/gallery">Gallery</a></li>
+              <li><a class="dropdown-item" routerLink="/archive-webinar">Archive Webinars</a></li>
+              <li><a class="dropdown-item" routerLink="/white-paper">Whitepapers</a></li>
+              <li><a class="dropdown-item" routerLink="/press-release/Blue-Tag-Advisory">Press Release</a></li>
+              <li><a class="dropdown-item" routerLink="/McKinsol-CSR">McKinsol CSR</a></li>
+              <li><a class="dropdown-item" routerLink="/partner-onboard">Become a Partner</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="javascript:void(0)">
+              Knowledge base
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" routerLink="/events">Events</a></li>
+              <li><a class="dropdown-item" routerLink="/gallery">Gallery</a></li>
+              <li><a class="dropdown-item" routerLink="/archive-webinar">Archive Webinars</a></li>
+              <li><a class="dropdown-item" routerLink="/white-paper">Whitepapers</a></li>
+              <li><a class="dropdown-item" routerLink="/press-release/Blue-Tag-Advisory">Press Release</a></li>
+              <li><a class="dropdown-item" routerLink="/McKinsol-CSR">McKinsol CSR</a></li>
+              <li><a class="dropdown-item" routerLink="/partner-onboard">Become a Partner</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
 </div>
+
