@@ -1,0 +1,280 @@
+/* Global Styles for Orange and Light Yellow Theme */
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header Image Section */
+.head-img {
+  height: 90vh;
+}
+
+.paraDiv {
+  background: rgba(255, 165, 0, 0.8); /* Orange with some transparency */
+  padding: 25px;
+  margin-left: 10%;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  max-width: 33%;
+  text-align: left;
+  position: relative;
+  top: 130px;
+}
+
+.paraDiv h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #ffeb3b; /* Light yellow for titles */
+}
+
+.paraDiv p {
+  margin-bottom: 0;
+  line-height: 1.6;
+  color: #f0e68c; /* Softer yellow */
+}
+
+/* Section Styles */
+.section {
+  padding: 20px;
+  background-color: #fff3e0; /* Light orange-yellow background */
+}
+
+h2 {
+  font-size: 24px;
+  color: #ff9800; /* Orange for headers */
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  color: #333; /* Darker text for readability */
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .col-md-6 {
+      margin-bottom: 20px;
+  }
+
+  .paraDiv {
+      max-width: 66%;
+      top: 50px;
+  }
+}
+
+/* CRM Section */
+.sec-crm {
+  margin-top: 50px;
+  background-color: #ffe0b2; /* Light orange */
+  padding: 40px 20px;
+  color: #333;
+}
+
+.sec-crm h2 {
+  margin-bottom: 15px;
+  color: #ff9800; /* Orange for headers */
+}
+
+.sec-crm p {
+  line-height: 1.6;
+  color: #333; /* Darker text */
+}
+
+.sec-crm a {
+  color: #ff5722; /* Orange-red for links */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sec-crm a:hover {
+  text-decoration: underline;
+}
+
+/* Benefits Section */
+.section-benefits {
+  background-image: url('/assets/main-banner_1x_e9ac-1.jpeg');
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.section-benefits h2 {
+  font-size: 30px;
+  margin-bottom: 40px;
+  color: #ffeb3b; /* Light yellow for the title */
+}
+
+.benefits-grid,
+.stats-grid {
+  display: grid;
+  gap: 30px;
+}
+
+.benefits-grid {
+  grid-template-columns: repeat(3, 1fr);
+  margin-bottom: 40px;
+}
+
+.benefit-item h3 {
+  font-size: 18px;
+  color: #ffeb3b; /* Light yellow */
+}
+
+/* Stats Grid */
+.stats-grid {
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+}
+
+.stat-item {
+  padding: 20px;
+  border-radius: 8px;
+  background: rgba(255, 235, 59, 0.3); /* Soft yellow for background */
+}
+
+.stat-item i {
+  font-size: 35px;
+  color: #ff9800; /* Orange for icons */
+  margin-bottom: 10px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.stat-item h3 {
+  font-size: 28px;
+  color: #ff9800; /* Orange for numbers */
+  margin: 10px 0;
+}
+
+.stat-item p {
+  font-size: 14px;
+  color: #f0e68c; /* Softer yellow */
+}
+
+@media (max-width: 992px) {
+  .benefits-grid {
+      grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats-grid {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .benefits-grid {
+      grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+  }
+}
+
+/* Services Section */
+.service-section {
+  background-size: cover;
+  background-position: center;
+  padding: 60px 20px;
+  background-color: #fff3e0; /* Light orange */
+  color: #333;
+}
+
+.service-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.service-card {
+  flex: 1 1 calc(25% - 20px);
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 152, 0, 0.9); /* Orange with transparency */
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(255, 152, 0, 0.3);
+}
+
+.service-icon i {
+  font-size: 30px;
+  color: #ffeb3b; /* Light yellow for icons */
+  margin-bottom: 10px;
+  border: 3px solid #ffeb3b;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.service-details h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #ffeb3b; /* Light yellow for headings */
+  font-weight: bold;
+}
+
+.service-details p {
+  font-size: 14px;
+  color: #f5f5f5; /* Light background text */
+}
+
+@media (max-width: 768px) {
+  .service-card {
+      flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .service-card {
+      flex: 1 1 100%;
+  }
+}
+
+/* Widget Wrap */
+.widget-wrap {
+  background-color: #ffe0b2; /* Light orange */
+  padding: 20px;
+}
+
+.heading h2 {
+  color: #ff9800; /* Orange */
+  text-align: center;
+  font-size: 40px !important;
+}
+
+/* Button Styles */
+.btn-ege {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 22px;
+  background-color: #ff9800; /* Orange for button */
+  color: #fff; /* White text on orange button */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-ege:hover {
+  background-color: #ffb74d; /* Slightly lighter orange on hover */
+}
