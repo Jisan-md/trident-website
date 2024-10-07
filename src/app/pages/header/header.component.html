@@ -1,0 +1,81 @@
+<div class="navbar-area">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" routerLink="/">
+        <img src="assets/Technosol-Informatics-Logo.png" alt="logo" style="height: 60px" />
+      </a>
+
+
+      <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
+        <span class="burger-menu">
+          <span class="top-bar"></span>
+          <span class="middle-bar"></span>
+          <span class="bottom-bar"></span>
+        </span>
+      </button>
+
+      <!-- Navbar Links -->
+      <div class="collapse navbar-collapse" [ngClass]="{'show': !isNavbarCollapsed}">
+        <ul class="navbar-nav">
+
+          <li><a class="nav-link" routerLink="/about-us">About Us</a></li>
+
+
+          <!-- Professional Services -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" routerLink="/about" routerLinkActive="active">
+              Professional Services
+            </a>
+            <ul class="dropdown-menu">
+              <li> <a class="dropdown-item " routerLink="#">ERP Services</a></li>
+              <li><a class="dropdown-item" routerLink="/crm-services">CRM Services</a></li>
+              <li><a class="dropdown-item" routerLink="/staff-augmentation">Staff Augmentation Services</a></li>
+
+            </ul>
+          </li>
+
+          <!-- Products -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" routerLink="#"
+              (click)="toggleDropdown('products'); $event.preventDefault()">
+              Products
+            </a>
+            <ul class="dropdown-menu" [class.show]="activeDropdown === 'products'">
+
+
+              <li><a class="dropdown-item" routerLink="/ls-retail">Intelligent Data Management Xpress
+                  <strong>(IDMX)</strong> </a></li>
+              <li><a class="dropdown-item" routerLink="/power-bi">Intelligent Sales Order Xpress
+                  <strong>(ISOX)</strong></a></li>
+              <li><a class="dropdown-item" routerLink="/power-bi">Data Migration Agile Connector
+                  <strong>(DMAC)</strong></a></li>
+              <li><a class="dropdown-item" routerLink="/power-bi">Intelligent Supplier Portal Xpress
+                  <strong>(ISPX)</strong></a></li>
+              <li><a class="dropdown-item" routerLink="/power-bi">SpotYourDeal</a></li>
+              <li><a class="dropdown-item" routerLink="/power-bi">Times of People</a></li>
+              <!-- <li><a class="dropdown-item" routerLink="/power-bi">RPA-Robotic Process Automation </a></li> -->
+            </ul>
+          </li>
+
+
+
+          <!-- Knowledge Base -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" routerLink="#"
+              (click)="toggleDropdown('knowledge'); $event.preventDefault()">
+              Knowledge Base
+            </a>
+            <ul class="dropdown-menu" [class.show]="activeDropdown === 'knowledge'">
+              <li><a class="dropdown-item" routerLink="/blogs">Blogs</a></li>
+              <li><a class="dropdown-item" routerLink="/case-studies">Case Studies</a></li>
+              <li><a class="dropdown-item" routerLink="/case-studies">Training</a></li>
+            </ul>
+          </li>
+          <li><a class="nav-link" routerLink="/careers">OurServices</a></li>
+          <li><a class="nav-link" routerLink="/careers">Careers</a></li>
+          <li><a class="nav-link" routerLink="/contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</div>
