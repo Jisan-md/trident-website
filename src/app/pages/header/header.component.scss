@@ -1,50 +1,196 @@
+.navbar-brand img {
+    height: 60px;
+    margin-left: 50px;
+}
+
+.navbar-nav .nav-item .nav-link .arrow {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
 .navbar-nav .nav-item {
     position: relative;
-  }
-  
-  .dropdown-menu {
-    display: none; /* Hide the dropdown by default */
+
+}
+
+ul li {
+    font-family: "Open Sans", Sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.navbar-nav .dropdown-menu {
+    display: none;
     position: absolute;
     top: 100%;
-    left: 0;
-    right: 0;
-    z-index: 1000; /* Ensure it appears above other content */
-  }
-  
-  .nav-item:hover .dropdown-menu {
-    display: block; /* Show dropdown on hover */
-  }
-  
-  .navbar-nav .nav-link {
-    padding: 0.5rem 1rem; /* Adjust padding as necessary */
-  }
-  
-  /* Optional: Style for dropdown items */
-  .dropdown-item {
-    padding: 0.5rem 1rem;
-    text-decoration: none;
-    color: black; /* Change as needed */
-  }
-  
-  .dropdown-item:hover {
-    background-color: #f8f9fa; /* Highlight on hover */
-  }
-  
+    left: 23px;
+    background-color: white;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 250px;
+    max-width: 300px;
+}
 
- 
-  .navbar-collapse {
-    display: none;
-  }
-  
-  .navbar-collapse.show {
-    display: block; /* Show when toggled */
-  }
-  
-  .dropdown-menu {
-    display: none;
-  }
-  
-  .dropdown-menu.show {
-    display: block; /* Show dropdown when active */
-  }
-  
+.navbar-nav .dropdown-item {
+    white-space: nowrap;
+    padding: 10px 15px;
+    color: #333;
+}
+
+.navbar-nav .dropdown-menu.show {
+    display: block;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: orange;
+}
+
+.navbar-nav .nav-item:hover>.dropdown-menu {
+    display: block;
+}
+
+.navbar-nav .dropdown-submenu {
+    position: relative;
+}
+
+.navbar-nav .dropdown-submenu .dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-left: 0;
+}
+
+.navbar-nav .dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.navbar-nav .dropdown-submenu>.dropdown-item::after {
+
+    float: right;
+}
+
+
+.dropdown-toggle .arrow {
+    transition: transform 0.2s;
+}
+
+
+
+@media (max-width: 991px) {
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+@media(max-width: 767px) {
+    .navbar-brand img {
+        margin-left: 0px;
+        height: 0px;
+        padding: 0px;
+    }
+    .navbar-nav .dropdown-menu {
+        margin-left: 80px;
+        top: 10px;
+        // background-color: orange;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: .5rem;
+        padding-left: 1.5rem;
+    }
+}
+
+.navbar {
+    display: flex;
+    background-color: white;
+    height: 75px;
+}
+
+.navbar-area {
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+@media (max-width: 991px) {
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-collapse {
+        display: none;
+    }
+
+    .navbar-collapse.show {
+        display: block;
+        background-color: white;
+        position: absolute;
+        top: 86px;
+        left: -12px;
+        width: 107%;
+        z-index: 1000;
+        padding: 10px 0;
+        color: #333;
+    }
+}
+
+.burger-menu {
+    display: inline-block;
+    cursor: pointer;
+    width: 30px;
+    height: 24px;
+    position: relative;
+}
+
+.burger-menu span {
+    background-color: #333;
+    display: block;
+    height: 3px;
+    margin: 5px 0;
+    width: 100%;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.burger-menu .top-bar {
+    transform-origin: top left;
+}
+
+.burger-menu .bottom-bar {
+    transform-origin: bottom left;
+}
+
+
+.burger-menu.active .top-bar {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-menu.active .middle-bar {
+    opacity: 0;
+}
+
+.burger-menu.active .bottom-bar {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.dropdown-item strong {
+    display: block;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+
+.dropdown-item:hover {
+    background-color: #f8b400;
+    color: #fff;
+}
+
+

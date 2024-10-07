@@ -7,15 +7,19 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
-  isNavbarCollapsed = true; // To track if the navbar is collapsed
-  activeDropdown: string | null = null; // To track which dropdown is active
+  isNavbarCollapsed = true;
+  activeDropdown: string | null = null;
 
   toggleNavbar() {
-    this.isNavbarCollapsed = !this.isNavbarCollapsed; // Toggle navbar state
+    this.isNavbarCollapsed = !this.isNavbarCollapsed;
   }
 
-  toggleDropdown(dropdown: string) {
-    this.activeDropdown = this.activeDropdown === dropdown ? null : dropdown; // Toggle dropdown state
+  toggleDropdown(dropdownName: string) {
+    if (this.activeDropdown === dropdownName) {
+      this.activeDropdown = null;  
+    } else {
+      this.activeDropdown = dropdownName;  
+    }
   }
   }
 
