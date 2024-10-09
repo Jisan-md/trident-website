@@ -18,8 +18,7 @@
         <ul class="navbar-nav">
           <li><a class="nav-link" routerLink="/" (click)="closeNavbar()">Home</a></li>
           <li><a class="nav-link" routerLink="/about-us" (click)="closeNavbar()">About Us</a></li>
-
-          <!-- Professional Services -->
+          
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" routerLink="/professional-services" routerLinkActive="active" (click)="closeNavbar()">
               Professional Services
@@ -30,8 +29,7 @@
               <li><a class="dropdown-item" routerLink="/staff-augmentation" (click)="closeNavbar()">Staff Augmentation Services</a></li>
             </ul>
           </li>
-
-          <!-- Products -->
+          
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" routerLink="#" (click)="toggleDropdown('products'); $event.preventDefault(); closeNavbar()">
               Products
@@ -46,8 +44,7 @@
               <li><a class="dropdown-item" routerLink="/times-of-people" (click)="closeNavbar()">Times of People</a></li>
             </ul>
           </li>
-
-          <!-- Knowledge Base -->
+          
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" routerLink="#" (click)="toggleDropdown('knowledge'); $event.preventDefault(); closeNavbar()">
               Knowledge Base
@@ -58,12 +55,13 @@
               <li><a class="dropdown-item" routerLink="/training" (click)="closeNavbar()">Training</a></li>
             </ul>
           </li>
-
+          
           <li><a class="nav-link" routerLink="/our-services" (click)="closeNavbar()">Our Services</a></li>
           <li><a class="nav-link" routerLink="/career" (click)="closeNavbar()">Careers</a></li>
           <li><a class="nav-link" routerLink="/contact-us" (click)="closeNavbar()">Contact</a></li>
         </ul>
       </div>
+      
     </nav>
   </div>
 </div>
