@@ -45,7 +45,7 @@ import { TimesOfPeopleComponent } from './pages/times-of-people/times-of-people.
 
   imports: [
     BrowserModule,
-    AppRoutingModule, MatTabsModule, BrowserAnimationsModule, TabsModule.forRoot(), NgbAccordionModule, MatExpansionModule
+    AppRoutingModule, MatTabsModule, BrowserAnimationsModule, TabsModule.forRoot(), NgbAccordionModule, MatExpansionModule,
     ReactiveFormsModule,
     AppRoutingModule,MatTabsModule,BrowserAnimationsModule,TabsModule.forRoot()
   ],
