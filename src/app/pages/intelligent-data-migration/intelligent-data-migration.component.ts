@@ -57,9 +57,8 @@ export class IntelligentDataMigrationComponent {
     }
   ];
 
-  selectedTab: number = 0; // Initially show the first tab content
+  selectedTab: number = 0; 
 
-  // Function to select the tab
   selectTab(index: number) {
     this.selectedTab = index;
   }

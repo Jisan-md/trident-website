@@ -3,10 +3,11 @@
     <!-- About Section -->
     <div class="footer-section about">
       <h2>About Us</h2>
-      <p>
+      <!-- <img src="assets/Technosol-Informatics-Logo.png" alt="" class="logo mt-3"> -->
+      <p class="mt-4">
         Technosol Informatics offers comprehensive IT services tailored to your needs, driving innovation and efficiency in the digital landscape.
       </p>
-      <div class="social-icons">
+      <div class="social-icons text-center">
         <a href="#"><i class="fab fa-facebook"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
         <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -14,35 +15,62 @@
     </div>
 
     <!-- Contact Section -->
-    <div class="footer-section contact">
-      <h2>Contact Information</h2>
-      <ul>
+    <div class="footer-section contact ">
+      <h2 >Contact Information</h2>
+      <ul class="contact-info mt-4">
         <li><i class="fas fa-map-marker-alt"></i> India, M-31 A, M-Block Market, Greater Kailash Part-II, New Delhi 110048</li>
-        <li><i class="fas fa-phone"></i> +91-8447639992 (Sales Enquiries)</li>
-        <li><i class="fas fa-phone"></i> +91-9643008721 (Job Enquiries)</li>
+        <li><i class="fas fa-phone-alt"></i> +91-8447639992 (Sales Enquiries)</li>
+        <li><i class="fas fa-phone-alt"></i> +91-9643008721 (Job Enquiries)</li>
         <li><i class="fas fa-phone-alt"></i> +91 11 29216726 / 29219927 (Landline)</li>
         <li><i class="fas fa-map-marker-alt"></i> USA, 5900 Balcones Drive, STE 100, Austin, Texas</li>
         <li><i class="fas fa-map-marker-alt"></i> Dubai, Crystal Tower, Business Bay, PO Box #238364, Dubai, UAE</li>
-        <li><i class="fas fa-phone"></i> +971 56305 7227</li>
+        <li><i class="fas fa-phone-alt"></i> +971 56305 7227</li>
         <li><i class="fas fa-map-marker-alt"></i> Africa, No. 11, NCIE Premises, Ilupeju Estate, Lagos, Nigeria</li>
       </ul>
     </div>
 
-    <!-- Enquiry Form Section -->
     <div class="footer-section enquiry">
       <h2>Quick Enquiry</h2>
-      <form>
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <input type="text" name="phone" placeholder="Phone Number" required>
-        <input type="text" name="country" placeholder="Country" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
+      <form [formGroup]="enquiryForm" (ngSubmit)="onSubmit()" class="mt-4">
+        <div>
+          <input type="text" formControlName="name" placeholder="Your Name" required>
+          <div *ngIf="isFieldInvalid('name')" class="error">Name is required</div>
+        </div>
+    
+        <div class="mt-3">
+          <input type="email" formControlName="email" placeholder="Your Email" required>
+          <div *ngIf="isFieldInvalid('email')" class="error">Valid email is required</div>
+        </div>
+    
+        <div class="mt-3">
+          <input type="text" formControlName="phone" placeholder="Phone Number" required>
+          <div *ngIf="isFieldInvalid('phone')" class="error">Phone number must be 10 digits</div>
+        </div>
+    
+        <div class="mt-3">
+          <input type="text" formControlName="country" placeholder="Country" required>
+          <div *ngIf="isFieldInvalid('country')" class="error">Country is required</div>
+        </div>
+    
+        <div class="mt-3">
+          <textarea formControlName="message" placeholder="Your Message" required></textarea>
+          <div *ngIf="isFieldInvalid('message')" class="error">Message is required</div>
+        </div>
+    <div class="mt-3">
+        <button type="submit" >Send</button>
+        <div *ngIf="formSubmitted && enquiryForm.invalid" class="error">
+          Form has errors, please correct them before submitting.
+        </div>
+    </div>
       </form>
     </div>
+    
+
+    
+
+
   </div>
 
-  <!-- Footer Bottom Section -->
   <div class="footer-bottom">
     <p>&copy; 2023-24 Trident Information Systems. All Rights Reserved.</p>
     <div class="footer-links">

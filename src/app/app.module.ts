@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './pages/header/header.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
-import { CareerComponent } from './pages/career/career.component';
-import { AboutUsComponent } from './pages/about-us/about-us.component';
+
 
 import { MatTabsModule } from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -27,10 +27,7 @@ import { TimesOfPeopleComponent } from './pages/times-of-people/times-of-people.
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    
-    CareerComponent,
-    AboutUsComponent,
-   
+
    
     IntelligentDataMigrationComponent,
          IsoxComponent,
@@ -43,6 +40,7 @@ import { TimesOfPeopleComponent } from './pages/times-of-people/times-of-people.
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
     AppRoutingModule,MatTabsModule,BrowserAnimationsModule,TabsModule.forRoot()
   ],
   providers: [],
