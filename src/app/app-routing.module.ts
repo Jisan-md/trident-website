@@ -3,8 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './pages/footer/footer.component';
 import { HeaderComponent } from './pages/header/header.component';
-import { RailTerminalOperationsSystemSoftwareComponent } from './pages/rail-terminal-operations-system-software/rail-terminal-operations-system-software.component';
-import { ErpSoftwareForEducationComponent } from './pages/erp-software-for-education/erp-software-for-education.component';
+
 import { IdmxComponent } from './pages/idmx/idmx.component';
 import { IntelligentDataMigrationComponent } from './pages/intelligent-data-migration/intelligent-data-migration.component';
 import { IsoxComponent } from './pages/isox/isox.component';
@@ -17,8 +16,7 @@ const routes: Routes = [
   { path: 'header', component: HeaderComponent },
   { path: 'footer', component: FooterComponent },
   { path: 'header', component: HeaderComponent },
-  { path: 'rail-terminal-operations-system-software', component: RailTerminalOperationsSystemSoftwareComponent },
-  { path: 'erp-software-for-education', component: ErpSoftwareForEducationComponent },
+  
   { path: 'idmx', component: IdmxComponent },
   { path: 'intelligent-data-migration', component: IntelligentDataMigrationComponent },
   { path: 'isox', component: IsoxComponent },
