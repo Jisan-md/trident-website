@@ -18,16 +18,18 @@
       <div class="collapse navbar-collapse" [ngClass]="{'show': !isNavbarCollapsed}">
         <ul class="navbar-nav">
 
+          <li><a class="nav-link" routerLink="/">Home</a></li>
+
           <li><a class="nav-link" routerLink="/about-us">About Us</a></li>
 
 
           <!-- Professional Services -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" routerLink="/about" routerLinkActive="active">
+            <a class="nav-link dropdown-toggle" routerLink="/professional-services" routerLinkActive="active">
               Professional Services
             </a>
             <ul class="dropdown-menu">
-              <li> <a class="dropdown-item " routerLink="#">ERP Services</a></li>
+              <li> <a class="dropdown-item " routerLink="/erp-services">ERP Services</a></li>
               <li><a class="dropdown-item" routerLink="/crm-services">CRM Services</a></li>
               <li><a class="dropdown-item" routerLink="/staff-augmentation">Staff Augmentation Services</a></li>
 
@@ -45,15 +47,21 @@
 
               <li><a class="dropdown-item" routerLink="/intelligent-data-migration">Intelligent Data Migration</a></li>
               <li><a class="dropdown-item" routerLink="/idmx">Intelligent Data Management Xpress
+              <li><a class="dropdown-item" routerLink="/idmx">Intelligent Data Management Xpress
                   <strong>(IDMX)</strong> </a></li>
+              <li><a class="dropdown-item" routerLink="/isox">Intelligent Sales Order Xpress
               <li><a class="dropdown-item" routerLink="/isox">Intelligent Sales Order Xpress
                   <strong>(ISOX)</strong></a></li>
               <li><a class="dropdown-item" routerLink="/dmac">Data Migration Agile Connector
+              <li><a class="dropdown-item" routerLink="/dmac">Data Migration Agile Connector
                   <strong>(DMAC)</strong></a></li>
+              <li><a class="dropdown-item" routerLink="/ispx">Intelligent Supplier Portal Xpress
               <li><a class="dropdown-item" routerLink="/ispx">Intelligent Supplier Portal Xpress
                   <strong>(ISPX)</strong></a></li>
               <li><a class="dropdown-item" routerLink="/spot">SpotYourDeal</a></li>
               <li><a class="dropdown-item" routerLink="/times-of-people">Times of People</a></li>
+                  <li><a class="dropdown-item" routerLink="/top">Times of People</a></li>
+              <li><a class="dropdown-item" routerLink="/spot-your-deal">SpotYourDeal</a></li>
               <!-- <li><a class="dropdown-item" routerLink="/power-bi">RPA-Robotic Process Automation </a></li> -->
             </ul>
           </li>
@@ -69,12 +77,12 @@
             <ul class="dropdown-menu" [class.show]="activeDropdown === 'knowledge'">
               <li><a class="dropdown-item" routerLink="/blogs">Blogs</a></li>
               <li><a class="dropdown-item" routerLink="/case-studies">Case Studies</a></li>
-              <li><a class="dropdown-item" routerLink="/case-studies">Training</a></li>
+              <li><a class="dropdown-item" routerLink="/training">Training</a></li>
             </ul>
           </li>
-          <li><a class="nav-link" routerLink="/careers">OurServices</a></li>
-          <li><a class="nav-link" routerLink="/careers">Careers</a></li>
-          <li><a class="nav-link" routerLink="/contact">Contact</a></li>
+          <li><a class="nav-link" routerLink="/our-services">OurServices</a></li>
+          <li><a class="nav-link" routerLink="/career">Careers</a></li>
+          <li><a class="nav-link" routerLink="/contact-us">Contact</a></li>
         </ul>
       </div>
     </nav>

@@ -43,6 +43,7 @@ import { IspxComponent } from './pages/ispx/ispx.component';
 import { IdmxComponent } from './pages/idmx/idmx.component';
 import { SpotComponent } from './pages/spot/spot.component';
 import { TimesOfPeopleComponent } from './pages/times-of-people/times-of-people.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -83,6 +84,7 @@ import { TimesOfPeopleComponent } from './pages/times-of-people/times-of-people.
          IdmxComponent,
          SpotComponent,
          TimesOfPeopleComponent
+   
   ],
   imports: [
     BrowserModule,
