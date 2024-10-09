@@ -11,7 +11,7 @@ body {
 }
 
 .paraDiv {
-  background: rgba(255, 165, 0, 0.8); /* Orange with some transparency */
+  background: rgba(255, 165, 0, 0.8); 
   padding: 25px;
   margin-left: 10%;
   border-radius: 10px;
@@ -69,7 +69,7 @@ p {
 /* CRM Section */
 .sec-crm {
   margin-top: 50px;
-  background-color: #ffe0b2; /* Light orange */
+  background-color: #ffe0b2; 
   padding: 40px 20px;
   color: #333;
 }
@@ -202,16 +202,16 @@ p {
 .service-card {
   flex: 1 1 calc(25% - 20px);
   margin: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   // background: rgba(255, 152, 0, 0.9); 
+  box-shadow: 0 6px 12px rgba(255, 152, 0, 0.3);
   border-radius: 8px;
   padding: 20px;
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .service-card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(255, 152, 0, 0.3);
 }
 
 .service-icon i {
@@ -267,9 +267,9 @@ p {
   font-size: 15px;
   font-weight: 500;
   line-height: 22px;
-  background-color: #ff9800; 
-  color: #fff;
-  border: none;
+  background:transparent; 
+  color: #ff9800;
+  border: 1px solid #ff9800;
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
@@ -277,6 +277,7 @@ p {
 }
 
 .btn-ege:hover {
-  background-color: #ffb74d; 
+  // background: #e67e22; 
+  border: 1px solid #fff;
   color: #fff;
 }
