@@ -32,7 +32,17 @@ import { ErpForFoodandBeverageComponent } from './pages/erp-for-foodand-beverage
 import { ErpForRealEstateComponent } from './pages/erp-for-real-estate/erp-for-real-estate.component';
 import { ErpForRealEstateCrmComponent } from './pages/erp-for-real-estate-crm/erp-for-real-estate-crm.component';
 import { ErpSoftwareForEducationComponent } from './pages/erp-software-for-education/erp-software-for-education.component';
+import { MatTabsModule } from '@angular/material/tabs';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TabsModule } from 'ngx-bootstrap/tabs';
 
+import { IntelligentDataMigrationComponent } from './pages/intelligent-data-migration/intelligent-data-migration.component';
+import { IsoxComponent } from './pages/isox/isox.component';
+import { DmacComponent } from './pages/dmac/dmac.component';
+import { IspxComponent } from './pages/ispx/ispx.component';
+import { IdmxComponent } from './pages/idmx/idmx.component';
+import { SpotComponent } from './pages/spot/spot.component';
+import { TimesOfPeopleComponent } from './pages/times-of-people/times-of-people.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -64,11 +74,19 @@ import { ErpSoftwareForEducationComponent } from './pages/erp-software-for-educa
     ErpForFoodandBeverageComponent,
     ErpForRealEstateComponent,
     ErpForRealEstateCrmComponent,
-    ErpSoftwareForEducationComponent
+    ErpSoftwareForEducationComponent,
+   
+    IntelligentDataMigrationComponent,
+         IsoxComponent,
+         DmacComponent,
+         IspxComponent,
+         IdmxComponent,
+         SpotComponent,
+         TimesOfPeopleComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,MatTabsModule,BrowserAnimationsModule,TabsModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

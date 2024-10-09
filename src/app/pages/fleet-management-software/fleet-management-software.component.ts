@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrl: './fleet-management-software.component.scss'
 })
 export class FleetManagementSoftwareComponent {
-
+ 
 }
