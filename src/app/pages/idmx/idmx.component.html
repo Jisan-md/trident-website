@@ -1,1 +1,212 @@
-<p>idmx works!</p>
+<section class="hero-section ptb-100" id="demo5"
+    style="background: url('assets/iDMX_banner.png')no-repeat center center / cover">
+
+    <div class="hero-bottom-shape-two"></div>
+    <div class="col-12">
+        <div class="page-header-content  text-center ">
+            <h1 class="text-white text-shadow-black mb-0">iDMX</h1>
+            <!-- <a href="/idmx1"><button class="btn btn-success" >Schedule Demo</button></a> -->
+
+        </div>
+    </div>
+</section>
+<div class="container">
+
+    <div class="section-title my-4 text-center">
+        <a href="https://store.sap.com/dcp/en/product/display-2001013968_live_v1/idmx-intelligent-data-management-express"
+            target="Ajaz" style="text-decoration: none; color: black;">iDMX SAP Store
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                class="bi bi-arrow-up-right-square" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm5.854 8.803a.5.5 0 1 1-.708-.707L9.243 6H6.475a.5.5 0 1 1 0-1h3.975a.5.5 0 0 1 .5.5v3.975a.5.5 0 1 1-1 0V6.707l-4.096 4.096z" />
+            </svg></a>
+    </div>
+
+    <div class="service-section my-4">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2>Introduction</h2>
+
+
+            </div>
+            <p class="sub-title my-2 mb-5 mt-5">
+                Welcome to a new era of SAP Master Data Management with Intelligent Data
+                Management Express (iDMX), McKinsol's cutting-edge proprietary tool. iDMX
+                is designed to revolutionize the management of SAP Master data across
+                various domains, including Article Master, Vendor Master, Customer Master,
+                Material Master, BOM, Routing, Cost Center, Profit Center, and GL Account.
+                With iDMX, you can effortlessly handle CRUD operations (Create, Read,
+                Update, and Delete) for SAP Master data, whether it's single entries or
+                mass data operations.
+            </p>
+        </div>
+    </div>
+    <div class="container text-center">
+        <div class="challenge-image">
+            <!-- <img src="../../../../assets/images/idmxpic1.jpg" alt="" /> -->
+            <iframe width="50%" height="315"
+                src="https://www.youtube.com/embed/MYEID9tqC0?list=PLJLQOahxZ0rSKgA2ZqIiqqt7v1K1cylBV" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+
+        </div>
+    </div>
+
+
+    <!-- how idmx works section -->
+
+    <div class="faq-section pt-100 bg-f8f8f8">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-5 order-2 order-lg-1 col-md-12">
+                    <div class="faq-item-image text-center">
+                        <img src="assets/eim_crucial.png" alt="about" />
+                        <div class="faq-item-shape">
+                            <!-- <div class="faq-shape-image">
+                                <img src="assets/faq-shape-1.png" alt="shape" />
+                            </div>
+                            <div class="faq-shape-image">
+                                <img src="assets/faq-shape-2.png" alt="shape" />
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7 order-1 order-lg-2 col-md-12">
+                    <div class="faq-content">
+                      <div class="section-title">
+                        <h2>How <span>iDMX</span> works</h2>
+                      </div>
+                  
+                      <!-- Data Creation Section -->
+                      <h4 class="faq-header" (click)="toggleSection('dataCreation')">Data Creation</h4>
+                      <div *ngIf="sections.dataCreation" class="faq-content">
+                        <p>
+                          Easily create new SAP Master data entries with iDMX's user-friendly interface, complete with real-time validations and AI-powered recommendations.
+                        </p>
+                      </div>
+                  
+                      <!-- Data Update Section -->
+                      <h4 class="faq-header" (click)="toggleSection('dataUpdate')">Data Update</h4>
+                      <div *ngIf="sections.dataUpdate" class="faq-content">
+                        <p>
+                          Effortlessly update existing records, with AI assistance to identify potential improvements or issues.
+                        </p>
+                      </div>
+                  
+                      <!-- Mass Data Management Section -->
+                      <h4 class="faq-header" (click)="toggleSection('massDataManagement')">Mass Data Management</h4>
+                      <div *ngIf="sections.massDataManagement" class="faq-content">
+                        <p>
+                          Handle large datasets with ease, reducing manual effort and minimizing the risk of errors.
+                        </p>
+                      </div>
+                  
+                      <!-- Workflow and Approval Section -->
+                      <h4 class="faq-header" (click)="toggleSection('workflowApproval')">Workflow and Approval</h4>
+                      <div *ngIf="sections.workflowApproval" class="faq-content">
+                        <p>
+                          Implement a configurable approval workflow to maintain control over data changes and ensure adherence to organizational standards.
+                        </p>
+                      </div>
+                  
+                      <!-- AI/ML Validation Section -->
+                      <h4 class="faq-header" (click)="toggleSection('aiMlValidation')">AI/ML Validation</h4>
+                      <div *ngIf="sections.aiMlValidation" class="faq-content">
+                        <p>
+                          Leverage the power of AI and ML to automate routine tasks, enhance data quality, and expedite approvals.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  
+            </div>
+        </div>
+    </div>
+
+    <!-- benifits section -->
+
+    <div class="feature-section pb-2 mt-4">
+        <div class="container">
+            <div class="row justify-content-center" style="padding: 10px">
+                <div class="col-sm-12" style="margin-bottom: 20px ;text-align: center">
+                    <h2 style="font-weight: bold">
+                        <span>BTP</span> Services
+                    </h2>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col4">
+                    <div class="quality-card" style="height: 205px">
+                        <div class="number">01</div>
+                        <h6>Effeciency</h6>
+                        <p>
+                            Streamline SAP Master Data Management, saving time and resources.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col4">
+                    <div class="quality-card" style="height:  205px;">
+                        <div class="number">02</div>
+                        <h6>Data Quality</h6>
+                        <p>Ensure data accuracy, consistency, and compliance across SAP Master data domains.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col4">
+                    <div class="quality-card" style="height:  205px;">
+                        <div class="number">03</div>
+                        <h6>Security</h6>
+                        <p>Enhance data security with role-based access controls.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col4">
+                    <div class="quality-card" style="height:  205px;">
+                        <div class="number">04</div>
+                        <h6>Compliance</h6>
+                        <p>
+                            Meet regulatory requirements and internal data governance standards.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6 col4">
+                    <div class="quality-card" style="height: 205px;">
+                        <div class="number">05</div>
+                        <h6>Productivity
+                        </h6>
+                        <p>
+                            Empower SAP Data Stewards with a tool that simplifies their work and makes them more
+                            effective.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- get started section -->
+    <div class="service-section my-4 mb-5 mt-5 ">
+        <div class="container">
+            <div class="section-title text-center mb-5 ">
+                <h2>Get started</h2>
+            </div>
+            <p class="sub-title my-2">
+                Experience the future of SAP Master Data Management with iDMX. Contact us
+                today to schedule a personalized demonstration and discover how iDMX can
+                elevate your data governance practices, increase productivity, and improve
+                data quality.
+            </p>
+            <p>
+                Unlock the potential of intelligent SAP Master Data Management with
+                McKinsol's iDMX. Your data has never been in safer hands.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="container text-center my-5">
+        <div class="idmx-video">
+            <video width="50%" controls>
+                <source src="assets/iDMX_Video.mp4" type="video/mp4" />
+                <source src="assets/images/about/6thAveTestimonial.ogg" type="video/ogg" />
+            </video>
+        </div>
+    </div>
+</div>

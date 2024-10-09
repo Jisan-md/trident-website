@@ -1,6 +1,6 @@
 p,li {
     color: #666666;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 15px;
     line-height: 1.8;
     font-family: 'Poppins', sans-serif;
@@ -464,14 +464,14 @@ a:hover {
 
 .content-section p {
     color: #666666;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.8;
     font-family: 'Poppins', sans-serif;
 }
 .tab-item label {
     cursor: pointer;
     font-weight: 500; 
-    font-size: 20px;
+    font-size: 18px;
 }
 .active-tab label {
     font-weight: bold; 
@@ -520,4 +520,6 @@ h4{
     }
 }
 
-  
+  span{
+    color: #e67e22;
+  }

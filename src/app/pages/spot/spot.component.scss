@@ -1,0 +1,76 @@
+.page-header-content h1 {
+    text-align: center;
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    font-size: 40px;
+}
+
+.text-shadow-black {
+    text-shadow: 5px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.ptb-100 {
+    padding: 110px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.challenge-image img {
+    width: 100%;
+    max-width: 500px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .challenge-image img, 
+    .about-image img {
+        max-width: 90%;
+        height: auto;
+    }
+}
+
+.challenge-image, .about-image {
+    padding: 10px 0;
+}
+
+
+.challenge-list-item {
+    padding-left: 45px;
+    position: relative;
+    // margin-top: 25px;
+
+    i {
+        // top: -10px;
+        left: -15px;
+        width: 50px;
+        height: 50px;
+        font-size: 26px;
+        line-height: 50px;
+        // line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        position: absolute;
+        display: inline-block;
+        color: #f39c12;
+       
+
+    }
+
+    &:hover {
+        i {
+            color: white;
+            background-color: #f39c12;
+        }
+    }
+}

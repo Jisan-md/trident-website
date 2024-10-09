@@ -5,7 +5,6 @@
         <img src="assets/Technosol-Informatics-Logo.png" alt="logo" style="height: 60px" />
       </a>
 
-
       <button class="navbar-toggler" type="button" (click)="toggleNavbar()">
         <span class="burger-menu">
           <span class="top-bar"></span>
@@ -17,72 +16,52 @@
       <!-- Navbar Links -->
       <div class="collapse navbar-collapse" [ngClass]="{'show': !isNavbarCollapsed}">
         <ul class="navbar-nav">
-
-          <li><a class="nav-link" routerLink="/">Home</a></li>
-
-          <li><a class="nav-link" routerLink="/about-us">About Us</a></li>
-
+          <li><a class="nav-link" routerLink="/" (click)="closeNavbar()">Home</a></li>
+          <li><a class="nav-link" routerLink="/about-us" (click)="closeNavbar()">About Us</a></li>
 
           <!-- Professional Services -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" routerLink="/professional-services" routerLinkActive="active">
+            <a class="nav-link dropdown-toggle" routerLink="/professional-services" routerLinkActive="active" (click)="closeNavbar()">
               Professional Services
             </a>
             <ul class="dropdown-menu">
-              <li> <a class="dropdown-item " routerLink="/erp-services">ERP Services</a></li>
-              <li><a class="dropdown-item" routerLink="/crm-services">CRM Services</a></li>
-              <li><a class="dropdown-item" routerLink="/staff-augmentation">Staff Augmentation Services</a></li>
-
+              <li><a class="dropdown-item" routerLink="/erp-services" (click)="closeNavbar()">ERP Services</a></li>
+              <li><a class="dropdown-item" routerLink="/crm-services" (click)="closeNavbar()">CRM Services</a></li>
+              <li><a class="dropdown-item" routerLink="/staff-augmentation" (click)="closeNavbar()">Staff Augmentation Services</a></li>
             </ul>
           </li>
 
           <!-- Products -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" routerLink="#"
-              (click)="toggleDropdown('products'); $event.preventDefault()">
+            <a class="nav-link dropdown-toggle" routerLink="#" (click)="toggleDropdown('products'); $event.preventDefault(); closeNavbar()">
               Products
             </a>
             <ul class="dropdown-menu" [class.show]="activeDropdown === 'products'">
-
-
-              <li><a class="dropdown-item" routerLink="/intelligent-data-migration">Intelligent Data Migration</a></li>
-              <li><a class="dropdown-item" routerLink="/idmx">Intelligent Data Management Xpress
-              <li><a class="dropdown-item" routerLink="/idmx">Intelligent Data Management Xpress
-                  <strong>(IDMX)</strong> </a></li>
-              <li><a class="dropdown-item" routerLink="/isox">Intelligent Sales Order Xpress
-              <li><a class="dropdown-item" routerLink="/isox">Intelligent Sales Order Xpress
-                  <strong>(ISOX)</strong></a></li>
-              <li><a class="dropdown-item" routerLink="/dmac">Data Migration Agile Connector
-              <li><a class="dropdown-item" routerLink="/dmac">Data Migration Agile Connector
-                  <strong>(DMAC)</strong></a></li>
-              <li><a class="dropdown-item" routerLink="/ispx">Intelligent Supplier Portal Xpress
-              <li><a class="dropdown-item" routerLink="/ispx">Intelligent Supplier Portal Xpress
-                  <strong>(ISPX)</strong></a></li>
-              <li><a class="dropdown-item" routerLink="/spot">SpotYourDeal</a></li>
-              <li><a class="dropdown-item" routerLink="/times-of-people">Times of People</a></li>
-                  <li><a class="dropdown-item" routerLink="/top">Times of People</a></li>
-              <li><a class="dropdown-item" routerLink="/spot-your-deal">SpotYourDeal</a></li>
-              <!-- <li><a class="dropdown-item" routerLink="/power-bi">RPA-Robotic Process Automation </a></li> -->
+              <li><a class="dropdown-item" routerLink="/intelligent-data-migration" (click)="closeNavbar()">Intelligent Data Migration</a></li>
+              <li><a class="dropdown-item" routerLink="/idmx" (click)="closeNavbar()">Intelligent Data Management Xpress<strong>(IDMX)</strong></a></li>
+              <li><a class="dropdown-item" routerLink="/isox" (click)="closeNavbar()">Intelligent Sales Order Xpress<strong>(ISOX)</strong></a></li>
+              <li><a class="dropdown-item" routerLink="/dmac" (click)="closeNavbar()">Data Migration Agile Connector<strong>(DMAC)</strong></a></li>
+              <li><a class="dropdown-item" routerLink="/ispx" (click)="closeNavbar()">Intelligent Supplier Portal Xpress<strong>(ISPX)</strong></a></li>
+              <li><a class="dropdown-item" routerLink="/spot" (click)="closeNavbar()">SpotYourDeal</a></li>
+              <li><a class="dropdown-item" routerLink="/times-of-people" (click)="closeNavbar()">Times of People</a></li>
             </ul>
           </li>
-
-
 
           <!-- Knowledge Base -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" routerLink="#"
-              (click)="toggleDropdown('knowledge'); $event.preventDefault()">
+            <a class="nav-link dropdown-toggle" routerLink="#" (click)="toggleDropdown('knowledge'); $event.preventDefault(); closeNavbar()">
               Knowledge Base
             </a>
             <ul class="dropdown-menu" [class.show]="activeDropdown === 'knowledge'">
-              <li><a class="dropdown-item" routerLink="/blogs">Blogs</a></li>
-              <li><a class="dropdown-item" routerLink="/case-studies">Case Studies</a></li>
-              <li><a class="dropdown-item" routerLink="/training">Training</a></li>
+              <li><a class="dropdown-item" routerLink="/blogs" (click)="closeNavbar()">Blogs</a></li>
+              <li><a class="dropdown-item" routerLink="/case-studies" (click)="closeNavbar()">Case Studies</a></li>
+              <li><a class="dropdown-item" routerLink="/training" (click)="closeNavbar()">Training</a></li>
             </ul>
           </li>
-          <li><a class="nav-link" routerLink="/our-services">OurServices</a></li>
-          <li><a class="nav-link" routerLink="/career">Careers</a></li>
-          <li><a class="nav-link" routerLink="/contact-us">Contact</a></li>
+
+          <li><a class="nav-link" routerLink="/our-services" (click)="closeNavbar()">Our Services</a></li>
+          <li><a class="nav-link" routerLink="/career" (click)="closeNavbar()">Careers</a></li>
+          <li><a class="nav-link" routerLink="/contact-us" (click)="closeNavbar()">Contact</a></li>
         </ul>
       </div>
     </nav>

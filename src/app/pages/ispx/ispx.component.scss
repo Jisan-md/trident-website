@@ -271,3 +271,31 @@ span {
 }
 
 
+.challenge-list-item {
+    padding-left: 45px;
+    position: relative;
+    // margin-top: 25px;
+
+    i {
+        // top: -10px;
+        left: 3px;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 50%;
+        position: absolute;
+        display: inline-block;
+        color: #f39c12;
+       
+
+    }
+
+    &:hover {
+        i {
+            color: white;
+            background-color: #f39c12;
+        }
+    }
+}
