@@ -26,7 +26,7 @@ body {
 .paraDiv h3 {
   margin-top: 0;
   margin-bottom: 10px;
-  color: #ffeb3b; /* Light yellow for titles */
+  color: #ff9800; 
 }
 
 .paraDiv p {
@@ -38,23 +38,23 @@ body {
 /* Section Styles */
 .section {
   padding: 20px;
-  background-color: #fff3e0; /* Light orange-yellow background */
+  background-color: #fff3e0; 
 }
 
-h2 {
+h2   {
   font-size: 24px;
-  color: #ff9800; /* Orange for headers */
+  color: #ff9800; 
+  font-weight: 600;
   margin-bottom: 15px;
 }
 
 p {
   font-size: 16px;
-  color: #333; /* Darker text for readability */
+  color: #333; 
   line-height: 1.6;
   margin-bottom: 10px;
 }
 
-/* Responsive Design Adjustments */
 @media (max-width: 768px) {
   .col-md-6 {
       margin-bottom: 20px;
@@ -105,9 +105,9 @@ p {
 }
 
 .section-benefits h2 {
-  font-size: 30px;
+  font-size: 24px;
   margin-bottom: 40px;
-  color: #ffeb3b; /* Light yellow for the title */
+  color: #ff9800; 
 }
 
 .benefits-grid,
@@ -123,10 +123,9 @@ p {
 
 .benefit-item h3 {
   font-size: 18px;
-  color: #ffeb3b; /* Light yellow */
+  color: #fff;
 }
 
-/* Stats Grid */
 .stats-grid {
   grid-template-columns: repeat(5, 1fr);
   justify-items: center;
@@ -135,27 +134,27 @@ p {
 .stat-item {
   padding: 20px;
   border-radius: 8px;
-  background: rgba(255, 235, 59, 0.3); /* Soft yellow for background */
+  // background: rgba(255, 235, 59, 0.3); 
 }
 
 .stat-item i {
   font-size: 35px;
-  color: #ff9800; /* Orange for icons */
+  color: #ff9800; 
   margin-bottom: 10px;
-  border: 3px solid #fff;
+  border: 3px solid #ff9800;
   border-radius: 50%;
   padding: 20px;
 }
 
 .stat-item h3 {
   font-size: 28px;
-  color: #ff9800; /* Orange for numbers */
+  color: #ff9800; 
   margin: 10px 0;
 }
 
 .stat-item p {
   font-size: 14px;
-  color: #f0e68c; /* Softer yellow */
+  color: #fff; 
 }
 
 @media (max-width: 992px) {
@@ -179,12 +178,11 @@ p {
   }
 }
 
-/* Services Section */
 .service-section {
   background-size: cover;
   background-position: center;
   padding: 60px 20px;
-  background-color: #fff3e0; /* Light orange */
+  background-color: #fff3e0; 
   color: #333;
 }
 
@@ -205,7 +203,7 @@ p {
   flex: 1 1 calc(25% - 20px);
   margin: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  background: rgba(255, 152, 0, 0.9); /* Orange with transparency */
+  // background: rgba(255, 152, 0, 0.9); 
   border-radius: 8px;
   padding: 20px;
   transition: transform 0.3s, box-shadow 0.3s;
@@ -218,9 +216,9 @@ p {
 
 .service-icon i {
   font-size: 30px;
-  color: #ffeb3b; /* Light yellow for icons */
+  color: #ff9800; 
   margin-bottom: 10px;
-  border: 3px solid #ffeb3b;
+  border: 3px solid #ff9800;
   border-radius: 50%;
   padding: 20px;
 }
@@ -228,15 +226,18 @@ p {
 .service-details h3 {
   font-size: 20px;
   margin: 10px 0;
-  color: #ffeb3b; /* Light yellow for headings */
+  color: #ff9800; 
   font-weight: bold;
 }
 
 .service-details p {
   font-size: 14px;
-  color: #f5f5f5; /* Light background text */
+  color: #333; 
 }
-
+.card{
+  background:transparent;
+  border: none;
+}
 @media (max-width: 768px) {
   .service-card {
       flex: 1 1 calc(50% - 20px);
@@ -249,25 +250,25 @@ p {
   }
 }
 
-/* Widget Wrap */
 .widget-wrap {
-  background-color: #ffe0b2; /* Light orange */
+  background-color: #ffe0b2;
   padding: 20px;
 }
 
 .heading h2 {
-  color: #ff9800; /* Orange */
+  color: #ff9800; 
   text-align: center;
   font-size: 40px !important;
 }
 
-/* Button Styles */
+
+
 .btn-ege {
   font-size: 15px;
   font-weight: 500;
   line-height: 22px;
-  background-color: #ff9800; /* Orange for button */
-  color: #fff; /* White text on orange button */
+  background-color: #ff9800; 
+  color: #fff;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
@@ -276,5 +277,6 @@ p {
 }
 
 .btn-ege:hover {
-  background-color: #ffb74d; /* Slightly lighter orange on hover */
+  background-color: #ffb74d; 
+  color: #fff;
 }
