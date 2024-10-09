@@ -21,7 +21,7 @@
 
           <!-- Professional Services -->
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" routerLink="/professional-services" routerLinkActive="active">
+            <a class="nav-link dropdown-toggle" routerLink="/professional-services" routerLinkActive="active" (click)="closeNavbar()">
               Professional Services
             </a>
             <ul class="dropdown-menu">
@@ -53,9 +53,9 @@
               Knowledge Base
             </a>
             <ul class="dropdown-menu" [class.show]="activeDropdown === 'knowledge'">
-              <li><a class="dropdown-item" routerLink="/blogs">Blogs</a></li>
-              <li><a class="dropdown-item" routerLink="/case-studies">Case Studies</a></li>
-              <li><a class="dropdown-item" routerLink="/training">Training</a></li>
+              <li><a class="dropdown-item" routerLink="/blogs" (click)="closeNavbar()">Blogs</a></li>
+              <li><a class="dropdown-item" routerLink="/case-studies" (click)="closeNavbar()">Case Studies</a></li>
+              <li><a class="dropdown-item" routerLink="/training" (click)="closeNavbar()">Training</a></li>
             </ul>
           </li>
 
@@ -67,3 +67,4 @@
     </nav>
   </div>
 </div>
+
