@@ -1,0 +1,234 @@
+<section class="hero-section ptb-100" id="demo5"
+    style="background: url('assets/Times_of_people.jpg')no-repeat center center / cover">
+
+    <div class="hero-bottom-shape-two"></div>
+    <div class="col-12">
+        <div class="page-header-content  text-center ">
+            <h1 class="text-white text-shadow-black mb-0">Times of People</h1>
+        </div>
+    </div>
+</section>
+
+<div class="container my-4 mb-4">
+    <div class="row">
+        
+        <div class="col-md-12">
+            <div class="security-services-card" style="margin-top: 20px;">
+                <p>Times of people is easy to use HR System that feels like you’ve got the power of a large team behind
+                    you. Times of people have all the features which are required for smooth functioning of any business
+                    whether it is Payroll or project management or whether it Attendance or recruitment it has all the
+                    features which you need to run your business steadily.</p>
+                <h6 style="color: rgb(80, 76, 76);">With Times of people, you can:</h6>
+                <ul style="color: var(--paragraphColor);">
+                    <li>Run payroll in minutes and eliminate manual errors</li>
+                    <li>Stay on track and view important employee compliance items, all in one place</li>
+                    <li>Attract and retain talent in today’s competitive market</li>
+                    <li>Helps to track employees with features like DSR, Attendance, project management, timesheet etc.
+                    </li>
+                    <li>Streamline communication, strengthen collaboration, and foster a culture of engagement</li>
+                </ul>
+            </div>
+        </div>
+        <h1 class="custom-heading mt-5 mb-5" >
+            Times of people is an OUT - AN OUT platform for your <br> business!
+        </h1>
+        
+        
+        <div class="container1">
+            <div class="tabs">
+                <div class="tab-item" [ngClass]="{'active-tab': activeTab === 1}" (click)="showContent(1)">
+                    <label for="tab1">Recruitment</label>
+                </div>
+                <div class="tab-item" [ngClass]="{'active-tab': activeTab === 2}" (click)="showContent(2)">
+                    <label for="tab2">Time and Attendance Management</label>
+                </div>
+                <div class="tab-item" [ngClass]="{'active-tab': activeTab === 3}" (click)="showContent(3)">
+                    <label for="tab3">Finance Management</label>
+                </div>
+                <div class="tab-item" [ngClass]="{'active-tab': activeTab === 4}" (click)="showContent(4)">
+                    <label for="tab4">Employee Information Management System</label>
+                </div>
+                <div class="tab-item" [ngClass]="{'active-tab': activeTab === 5}" (click)="showContent(5)">
+                    <label for="tab5">Employee Benefits Management</label>
+                </div>
+                <div class="tab-item" [ngClass]="{'active-tab': activeTab === 6}" (click)="showContent(6)">
+                    <label for="tab6">Professional Development</label>
+                </div>
+            </div>
+
+            <div class="content-section">
+                <div *ngIf="activeTab === 1" class="content-container">
+                    <div class="content-text">
+                        <h4>Recruitment</h4>
+                        <p>
+                            To find the right talent for a particular position in an organization, you must post on
+                            social media and
+                            sites for job seekers. HRMS support creating job descriptions and posting them on various
+                            platforms and
+                            the company’s site. <br> <br>It also proves effective for checking candidates’ backgrounds. Some
+                            criteria are set in the tool. Based on these criteria the tool accepts and rejects
+                            applications for jobs.
+                        </p>
+                    </div>
+                    <div class="content-image">
+                        <img src="assets/Recruitment.jpg" alt="Recruitment" >
+                    </div>
+                </div>
+                <div *ngIf="activeTab === 2" class="content-container">
+                    <div class="content-text">
+                        <h4>Time and Attendance Management</h4>
+                        <p>
+                            Time management is the crucial feature of Human Resources Portals. From login to log out,
+                            the
+                            software keeps track of the time of every employee. It schedules work shifts for employees
+                            as
+                            per the need. Moreover, HRMS makes absence management, holiday calendar, overtime tracking,
+                            and
+                            altering employees as per the schedule set by the company less confusing and manageable.
+                        </p>
+                    
+                </div>
+                <div class="content-image" >
+                    <img src="assets/2-500x486.png" alt="Recruitment">
+                </div>
+            </div>
+            <div *ngIf="activeTab === 3" class="content-container">
+                <div class="content-text">
+                <h4>Finance Management</h4>
+                <p>
+                    Finance management is an integrated part of an organization because it has to provide salaries
+                    to employees on time. It is required for impeccable distribution. Payroll management also comes
+                    under this point. Well, this is an administrative task for compensating employees. <br><br>
+                    It contains information like gross salaries of employees, payroll tax liability, and payroll
+                    deductions. HRMS calculates gross salary, archives payroll records, and remit taxes to
+                    government agencies.
+                </p>
+                </div>
+                <div class="content-image">
+                    <img src="assets/3-500x383.png" alt="Recruitment">
+                </div>
+            </div>
+            <div *ngIf="activeTab === 4" class="content-container">
+                <div class="content-text">
+                <h4>Employee Information Management System</h4>
+                <p>
+                    It is one of the crucial features of Human Resources Portals. HR portals store information about
+                    employees. It contains all the details of employees from recruitment to resignation from the
+                    company. The personal information includes the employee’s performance, insurance plans, banking,
+                    and tax details. It can also help you when hiring new employees. <br><br>
+                    It contains information like gross salaries of employees, payroll tax liability, and payroll
+                    deductions. HRMS calculates gross salary, archives payroll records, and remit taxes to
+                    government agencies.
+                </p>
+                </div>
+                <div class="content-image">
+                    <img src="assets/employee_info.png" alt="Recruitment">
+                </div>
+            </div>
+            <div *ngIf="activeTab === 5" class="content-container">
+                <div class="content-text">
+                <h4>Employee Benefits Management</h4>
+                <p>
+                    An HR team composes and updates a list of benefits. On the other hand, employees can leave
+                    requests for benefits on the tool. The benefits administration system contains health, insurance
+                    plans, stock options, and information related to the open enrollment periods. It helps the
+                    organization adjust benefits reasonably.
+                </p>
+                </div>
+                <div class="content-image">
+                    <img src="assets/employee_benefit.png" alt="Recruitment">
+                </div>
+            </div>
+            <div *ngIf="activeTab === 6" class="content-container">
+                <div class="content-text">
+                <h4>Professional Development</h4>
+                <p>
+                    It is one of the pivotal features of Human Resources Portals. The performance of the employees
+                    can be tracked with the online portal easily. It improves productivity and eventually proves
+                    beneficial for the organization and employees. <br><br>
+                    Various training programs help employees in professional development, learn new skills, and
+                    improve the existing ones. Portal schedules and conducts these programs for multimedia learning
+                    materials also.
+                </p>
+                </div>
+                <div class="content-image">
+                    <img src="assets/professional_development.png" alt="Recruitment">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="blog-area mt-4">
+        <div class="container">
+            <div class="section-title mt-4">
+                <p>In addition, some employee portals also influence employee performance. The next section of this
+                    blog is dedicated to it and the difference between HR and employee portals.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="latest-tips-tricks-card">
+                        <div class="tips-tricks-image">
+                            <a href="javascript:void(0)" class="d-block">
+                                <img src="assets/your_requirement_our_skill.jpg" alt="ajaz" style="width: 100%;">
+                            </a>
+                        </div>
+                        <div class="tips-tricks-content">
+                            <h4>
+                                <a href="javascript:void(0)">
+                                    Your requirements and Our Skills create great software
+                                </a>
+                            </h4>
+                            <p>Times of people centers on you, your company, and your people. By analyzing usage
+                                data, listening to feedback, and having client conversations, we partner together to
+                                uncover the best ideas to meet your unmet needs.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-12">
+                    <div class="latest-tips-tricks-right-item">
+                        <article class="item">
+                            <a href="javascript:void(0)" class="thumb">
+                                <span class="fullimage" role="img"
+                                    style="background-image: url(assets/we_set_uup.jpg);"></span>
+                                <img src="assets/hr-blog2.png" alt="blog-image">
+                            </a>
+                            <div class="info">
+                                <h4>
+                                    <a href="javascript:void(0)">
+                                        We set you up for your accomplishments!
+                                    </a>
+                                </h4>
+                                <p>Our in-house experts understand the challenges you face and we’re here to help
+                                    you make a difference. We’ll provide resources around compliance and user
+                                    adoption to support you and your team.</p>
+                            </div>
+                        </article>
+                        <article class="item">
+                            <a href="javascript:void(0)" class="thumb">
+                                <span class="fullimage" role="img"
+                                    style="background-image: url(assets/Support_from_start_to_end.jpg);"></span>
+                                <img src="assets/hr-blog3.png" alt="blog-image">
+                            </a>
+                            <div class="info">
+                                <h4>
+                                    <a href="javascript:void(0)">
+                                        We Support You from Start to Finish
+                                    </a>
+                                </h4>
+                                <p>We’ve got you covered with dedicated, on-demand support for every part of your
+                                    journey. During implementation, and beyond, we tailor our entire support system
+                                    to fuel your success.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="latest-tips-tricks-shape">
+            <img src="assets/shape.png" alt="image">
+        </div>
+    </div>
+</div>
+</div>
