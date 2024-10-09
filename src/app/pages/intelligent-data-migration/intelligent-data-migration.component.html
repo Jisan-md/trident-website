@@ -453,3 +453,109 @@
         </div>
     </div>
 </section>
+
+
+<!-- <section>
+    <div class="container mt-5">
+      <div class="row">
+        <h2>Get in Touch</h2>
+        <p>
+          Ready to unlock the power of Intelligent Data Migration? Contact us
+          today to learn more about our solutions and how we can help transform
+          your data landscape.
+        </p>
+        <div class="col-md-12 col-lg-12 max">
+          <form [formGroup]="form" class="contact-form">
+            <div class="section-title">
+              <p class="text-center">
+                We will contact you within 48 hours after receiving your request.
+              </p>
+              <hr />
+            </div>
+            <div class="row">
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="form-group">
+                  <label>Your Name <span style="color: red;">*</span></label>
+                  <input
+                    type="text"
+                    formControlName="name"
+                    class="form-control"
+                    placeholder="Enter Name"
+                    id="name"
+                    required
+                    autocomplete="off"
+                  />
+                  <div
+                    class="text-danger"
+                    *ngIf="name.invalid && (name.dirty || name.touched)"
+                  >
+                    <div *ngIf="name.errors.required">Name is required.</div>
+                    <div *ngIf="name.errors.minlength">
+                      Name must be at least 2 characters long.
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="form-group">
+                  <label>Email Address <span style="color: red;">*</span> </label>
+                  <input
+                    type="email"
+                    formControlName="email"
+                    class="form-control"
+                    id="email"
+                    placeholder="Enter Email"
+                    required
+                    autocomplete="off"
+                  />
+                  <div
+                    class="text-danger"
+                    *ngIf="email.invalid && (email.dirty || email.touched)"
+                  >
+                    <div *ngIf="email.errors.required">Email is required.</div>
+                    <div *ngIf="email.errors.email">Invalid email format.</div>
+                  </div>
+                </div>
+              </div>
+          
+              <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="form-group">
+                  <label>Message<span style="color: red;"> *</span> </label>
+                  <textarea
+                    formControlName="message"
+                    id="message"
+                    class="form-control"
+                    cols="30"
+                    placeholder="Enter Text"
+                    rows="5"
+                    required
+                  ></textarea>
+                  <div
+                  class="text-danger"
+                  *ngIf="message.invalid && (message.dirty || message.touched)"
+                >
+                  <div *ngIf="message.errors.required">Message is required.</div>
+                
+                </div>
+                </div>
+              </div>
+          
+              <div class="col-sm-12 col-md-12 col-lg-12 mt-2">
+                <button
+                  class="default-btn"
+                  style="padding: 10px"
+                  type="submit"
+                  (click)="submit()"
+                  [disabled]="form.invalid"
+                >
+                  Send Message
+                </button>
+              </div>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+    </div>
+  </section> -->
