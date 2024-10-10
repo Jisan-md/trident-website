@@ -72,9 +72,10 @@ footer {
   width: 100%;
   padding: 10px;
   border: 1px solid #ff9800;
+  box-shadow: 0 1.5px 0px #ff9800;
   border-radius: 5px;
-  // background-color: #34495e;
-  background: transparent;
+  background-color: #34495e;
+  // background: transparent
   color: #ff9800;
 
 }
@@ -90,6 +91,8 @@ footer {
   background:transparent;
   color: #ff9800;
   border: 1px solid #ff9800;
+  box-shadow: 0 1.5px 0px #ff9800;
+
   border-radius: 5px;
   cursor: pointer;
   font-size: 1em;
@@ -99,6 +102,8 @@ footer {
   background:transparent;
   color: #fff;
   border: 1px solid #fff;
+  box-shadow: 0 1.5px 0px #fff;
+
 }
 
 .footer-bottom {
