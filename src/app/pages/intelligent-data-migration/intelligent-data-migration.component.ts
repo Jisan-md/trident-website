@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './intelligent-data-migration.component.scss'
 })
 export class IntelligentDataMigrationComponent {
+
+
+  
   tabs = [
     {
       title: 'Seamless Transition to SAP S/4HANA',

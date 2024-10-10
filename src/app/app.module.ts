@@ -60,8 +60,10 @@ import { StaffAugmentationServicesComponent } from './pages/staff-augmentation-s
   schemas: [CUSTOM_ELEMENTS_SCHEMA,NO_ERRORS_SCHEMA],
 
   imports: [
-    BrowserModule, AppRoutingModule, MatTabsModule, BrowserAnimationsModule, TabsModule.forRoot(), MatExpansionModule,
-    ReactiveFormsModule,NgbModule,NgbAccordionModule
+    BrowserModule,
+    AppRoutingModule, MatTabsModule, BrowserAnimationsModule, TabsModule.forRoot(), NgbAccordionModule, MatExpansionModule,
+    ReactiveFormsModule,
+    AppRoutingModule,MatTabsModule,BrowserAnimationsModule,TabsModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
