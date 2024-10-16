@@ -1,1 +1,168 @@
-<p>contact-us works!</p>
+<section class="hero-section ptb-100" id="demo5"
+    style="background: url('assets/get_in_touch.jpg')no-repeat center center / cover">
+
+    <div class="hero-bottom-shape-two"></div>
+    <div class="col-12">
+        <div class="page-header-content  text-center ">
+            <h1 class="text-white text-shadow-black mb-0">Contact Us</h1>
+            <!-- <a href="/idmx1"><button class="btn btn-success" >Schedule Demo</button></a> -->
+
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<div class="contact-section ptb-100">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-12 col-lg-6">
+                <div class="contact-item">
+                    <div class="section-title">
+                        <h2>Leave A Message</h2>
+                        <p>We will contact you within 48 hours after receiving your request.</p>
+                    </div>
+                    <form [formGroup]="form" class="contact-form">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label>Your Name *</label>
+                                    <input type="text" formControlName="name" class=" form-control" id="name" required
+                                        autocomplete="off">
+
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label>Phone Number *</label>
+                                    <input type="text" formControlName="phone" class="form-control" id="phone_number"
+                                        required autocomplete="off">
+
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label>Email Address *</label>
+                                    <input type="email" formControlName="email" class="form-control" id="email" required
+                                        autocomplete="off">
+
+
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label>Query Type *</label>
+                                    <select formControlName="query_type" class="form-control" id="query_type" required>
+                                        <option value="Enquiry">Enquiry</option>
+                                        <option value="Support">Support</option>
+                                        <option value="Sales">Sales</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-group">
+                                    <label>Message...</label>
+                                    <textarea formControlName="message" id="message" class="form-control" cols="30"
+                                        rows="5" required></textarea>
+                                    <!-- <div class="text-danger" *ngIf="message.invalid && (message.dirty || message.touched)">
+                                  <div *ngIf="message.invalid && message.errors.required">Message is required.</div>
+                                </div> -->
+                                </div>
+                            </div>
+
+
+
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <label for=""><strong>Enter Captcha *</strong></label>
+
+                                <textarea type="text" class="textarea form-control text-center dotted-border"
+                                    style="padding-top: 10px;color: black; font-style: italic;background-color: rgb(235, 232, 232);"
+                                    readonly="readonly" formControlName="mainCaptchaValue" cols="30" rows="1">
+              </textarea>
+
+                            </div>
+                            <!-- <div class="row"> -->
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <div class="input-group">
+                                    <input type="text" class="form-control text-center" id="txtinput"
+                                        formControlName="txtinput" [(ngModel)]="txtinput"><br>
+
+
+
+
+                                </div>
+                            </div>
+
+
+                            <div class="captcha-feedback">
+                                <span id="error" class="text-danger"></span>
+                                <span id="success" class="text-success"></span>
+                            </div>
+
+
+                          
+
+                           
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <div class="contact-item-image text-center">
+                    <img src="assets/Leave_a_message.jpg" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Info -->
+<div class="contact-info-section pt-75 pb-75 bg-fbfbfb">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Location Box -->
+            <div class="col-lg-4 col-sm-6 col-md-6 col-12">
+                <div class="contact-info-box">
+                    <img src="assets/Location.jpg" alt="Location">
+                    <div class="content">
+                        <h4>Location Here</h4>
+                        <p style="font-size: 15px;">
+                            <i class='fas fa-map-marker-alt'></i> 112 W. 34th Street, 17th and 18th Floors, New York, New York 10120
+                        </p>
+                        <p style="font-size: 15px;">
+                            <i class='fas fa-map-marker-alt'></i> 6 Moyse Place, Suite No. 101, Edison, NJ 08820 USA
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call Box -->
+            <div class="col-lg-4 col-sm-6 col-md-6 col-12">
+                <div class="contact-info-box">
+                    <img src="assets/Call_me.jpg" alt="Call">
+                    <div class="content">
+                        <h4>Call Here</h4>
+                        <p>
+                            <i class='fas fa-phone-alt'></i>
+                            <a href="tel:+17323180550">+1 (732) 318-0550</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Email Box -->
+            <div class="col-lg-4 col-sm-6 col-md-6 col-12">
+                <div class="contact-info-box">
+                    <img src="assets/email.jpg" alt="Email">
+                    <div class="content">
+                        <h4>Email Here</h4>
+                        <p>
+                            <i class='fas fa-envelope-open'></i>
+                            <a href="mailto:support@mckinsol.com">support&#64;mckinsol.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
