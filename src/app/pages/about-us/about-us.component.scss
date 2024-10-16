@@ -1,0 +1,217 @@
+
+.head-img {
+    height: 90vh;
+  }
+  
+  .paraDiv {
+    background: rgba(255, 165, 0, 0.8); 
+    padding: 25px;
+    margin-left: 10%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    max-width: 40%;
+    text-align: left;
+    position: relative;
+    top: 170px;
+    
+  }
+  
+  .paraDiv h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #ff9800; 
+  }
+  
+  .paraDiv p {
+    margin-bottom: 0;
+    line-height: 1.6;
+    color: #f0e68c; 
+  }
+  
+  .section {
+    padding: 20px;
+    background-color: #fff3e0; 
+  }
+  
+  h2   {
+    font-size: 24px;
+    color: #ff9800; 
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #333; 
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .col-md-6 {
+        margin-bottom: 20px;
+    }
+  
+    .paraDiv {
+        max-width: 85%;
+        top: 130px;
+  
+    }
+  }
+  .container {
+    padding: 20px;
+}
+.tabs {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.tab-item {
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+.tab-item label{
+    margin-bottom: 0%;
+}
+.tab-item:hover {
+    background-color: #f0e68c;
+}
+.tab-item:last-child {
+    border-bottom: none;
+}
+.active-tab {
+    background: linear-gradient(to right, #e67e22, #f39c12);
+    color: white;
+}   
+.content-section {
+    padding-left: 20px;
+    padding-top: 15px;
+    background-color: #fff;
+    border-left: 1px solid #ddd;
+}
+.content-container {
+    margin-bottom: 20px;
+}
+.content-text h4 {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
+}
+.content-text p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+.row {
+    display: flex;
+    align-items: flex-start;
+}
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+    }
+
+    .col-lg-4 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .col-lg-8 {
+        width: 100%;
+    }
+}
+
+
+.faq-content {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    // padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-title h2 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .section-title h2 span {
+    color: #f39c12; 
+  }
+  
+
+  .faq-header {
+    font-size: 20px;
+    color: #666; 
+    padding: 12px 16px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 8px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+  }
+  
+  .faq-header::after {
+    content: '\25BC'; 
+    font-size: 16px;
+    margin-left: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-header.active::after {
+    transform: rotate(180deg); 
+  }
+  
+  .faq-header:hover {
+    background: linear-gradient(to right, #e67e22, #f39c12);    
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    color: #fff;
+  }
+  
+  
+  .faq-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.9;
+    margin: 10px 0 20px 0;
+    padding: 10px 16px;
+    background-color: #fff;
+    // border-radius: 5px;
+    // border: 1px solid #ddd;
+    transition: all 0.3s ease;
+  }
+  
+  .faq-content p:hover {
+    background-color: #f1f1f1;
+  }
+  
+
+  .faq-content div.ng-trigger.ng-trigger-collapse {
+    animation: fadeIn 0.3s ease;
+  }
+
+  /* Apply background gradient only to active heading */
+.faq-header.open {
+    background: linear-gradient(to right, #e67e22, #f39c12); /* Apply gradient when section is open */
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
