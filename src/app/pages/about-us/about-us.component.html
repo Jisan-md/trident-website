@@ -1,0 +1,188 @@
+<section class="head-img" style="background: url('/assets/about1.jpeg')no-repeat center center / cover;">
+    <div class="paraDiv row justify-content-center">
+     <h3 class="elementor-slide-heading text-white">Trident’s Story
+    </h3>
+     <p class="elementor-slide-description text-white">Trident is a global leader in digital transformation, helping organizations accelerate growth through innovative solutions. We provide expert consulting, implementation, and managed services powered by Microsoft Dynamics 365, ERP, CRM, Business Intelligence, and Cloud technologies. Our solutions optimize customer, employee, partner, and supplier experiences, leveraging data, AI, and RPA to drive efficiency and unlock new business potential.
+
+
+
+     </p>
+ </div>
+</section>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4">
+    <div class="tabs">
+        <div class="tab-item" [ngClass]="{'active-tab': activeTab === 1}" (click)="showContent(1)">
+            <label for="tab1">About Us</label>
+        </div>
+        <div class="tab-item" [ngClass]="{'active-tab': activeTab === 2}" (click)="showContent(2)">
+            <label for="tab2">About Trident GBS</label>
+        </div>
+        <div class="tab-item" [ngClass]="{'active-tab': activeTab === 3}" (click)="showContent(3)">
+            <label for="tab3">Locations</label>
+        </div>
+        <div class="tab-item" [ngClass]="{'active-tab': activeTab === 4}" (click)="showContent(4)">
+            <label for="tab4">Virtical Solution & Experience</label>
+        </div>
+        <div class="tab-item" [ngClass]="{'active-tab': activeTab === 5}" (click)="showContent(5)">
+            <label for="tab5">Our Partnership</label>
+        </div>
+        <div class="tab-item" [ngClass]="{'active-tab': activeTab === 6}" (click)="showContent(6)">
+            <label for="tab6">Careers</label>
+        </div>
+    </div>
+        </div>
+        <div class="col-lg-8">
+    <div class="content-section">
+        <div *ngIf="activeTab === 1" class="content-container">
+            <div class="content-text">
+                <h5 style="line-height: 1.5;"><b>Microsoft Solution Partner for Business Enterprises Applications - Dynamics 365 (D365 F&O and Business Central), Microsoft Azure and Power Platform
+                </b></h5>
+                <h4 class="mt-4"><b>The Binding Force </b></h4>
+                <p>
+                   <b> Achieving lasting success through a consistent focus on our customers and employees! </b><br><br>
+
+                    Vision, mission and values provide the organizational fiber that connects people with common goals, not just financial, but around a purpose and a way of achieving that purpose. <br><br>
+                    
+                    The Vision, Mission, and Values are not just a written statement of our purpose and aspirations, but a way of life and the attributes by which we will all be measured and rewarded. <br><br>
+                    
+                    Our only purpose and aspiration is that we that we work with you to achieve your next success. Whatever, be our qualifications and credentials, we want you to know that our focus is on you: your business, your needs, your goals, and your future                   
+                </p>
+
+                <div class="faq-section">
+                    <div class="container mb-5">
+                      <div class="row align-items-center">
+                        <div class="col-12 order-1 order-lg-1">
+                          <div class="faq-content">
+                            <div class="section-title">
+                              <h2>Mission, Vision and Values</h2>
+                            </div>
+                  
+                            <h4 class="faq-header" (click)="toggleSection('mission')" [ngClass]="{'open': sections.mission}">Mission</h4>
+                            <div *ngIf="sections.mission" class="faq-content">
+                              <p>
+                                “To combine business process and human intellect to deliver strategy solutions where our deliverables are measured in terms of business benefit by our customers.” We at Trident are committed to Quality, Excellence and Innovation in every endeavour. We believe in combining the best people, processes and technology to achieve excellent results consistently.
+
+                              </p>
+                            </div>
+                  
+                            <h4 class="faq-header" (click)="toggleSection('vision')" [ngClass]="{'open': sections.vision}">Vision</h4>
+                            <div *ngIf="sections.vision" class="faq-content">
+                              <p>
+                                To be a trusted partner, committed to client’s success, helping organizations discover maximum value from their people and processes. <br><br>
+
+                                <b>Our customers perceive us as a fair and reliable partner, which helps us establish sustainable customer relations. We lead by example when it comes to quality of service and the way we approach people. We ensure our growth through above-average profits in our business areas.  </b>                            </p>
+                            </div>
+                  
+                            <h4 class="faq-header" (click)="toggleSection('values')" [ngClass]="{'open': sections.values}">Values</h4>
+                            <div *ngIf="sections.values" class="faq-content">
+                                <p>
+                                    “To combine business process and human intellect to deliver strategy solutions where our deliverables are measured in terms of business benefit by our customers.” We at Trident are committed to Quality, Excellence and Innovation in every endeavour. We believe in combining the best people, processes and technology to achieve excellent results consistently.
+                                    <br><br><b>Customer First </b><br>
+                                    
+                                    Our customers are the reason for our existence. We anticipate their needs and endeavor to meet and surpass their expectations.
+                                    
+                                    <br><br><b>Passion for Excellence </b><br>
+                                    
+                                    We, strive to attain individual and team excellence through a spirit of continuous learning, lofty standards, new ideals and a commitment to high levels of achievement. Taking complete ownership and delivering on commitments. Our customers are the reason for our existence. We anticipate their needs and endeavor to meet and surpass their expectations.
+                                    
+                                    <br><br><b> Honesty & Integrity </b><br>
+                                    
+                                    We, nurture a culture of spontaneity and mutual trust. Impeccable ethics and morals will be the cornerstone of all our interactions and relationships.
+                                    
+                                    <br><br><b>
+                                    Innovation </b><br>
+                                    
+                                    
+                                    We, continuously re-engineer our processes and mindsets and encourage individual creativity and improvisation in all our actions.
+                                    
+                                    <br><br><b>Social Responsibilities </b><br>
+                                    
+                                    We, recognize, abide by and add value to the social environment, while embracing our responsibilities as a good corporate citizen in every country we operate.
+                                    </p>                            </div>
+                  
+                            <h4 class="faq-header" (click)="toggleSection('leadership')" [ngClass]="{'open': sections.leadership}">Leadership Guidelines</h4>
+                            <div *ngIf="sections.leadership" class="faq-content">
+                           <p> Our leadership guidelines define our shared understanding of leadership ability. They are authoritative, and compliance with them can be demanded by everyone in the company.
+                             <br >
+                            <b class="mt-4"> Role models.</b>
+                             <br>
+                             <b class="mt-4">Entrepreneurship & Self Reliance.</b>
+
+                            <br>
+                            <b class="bclass">Teamwork.</b>
+
+<br>
+<b class="bclass">Communication.</b>
+
+
+                           </p>
+                            
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+            </div>
+          
+        </div>
+        <div *ngIf="activeTab === 2" class="content-container">
+            <div class="content-text">
+                <h4>Time and Attendance Management</h4>
+                <p>
+                    
+                    altering employees as per the schedule set by the company less confusing and manageable.
+                </p>
+            
+        </div>
+        
+    </div>
+    <div *ngIf="activeTab === 3" class="content-container">
+        <div class="content-text">
+        <h4>Finance Management</h4>
+        <p>
+            Finance management is an integrated part of an organization because it has to provide salaries
+          
+        </p>
+        </div>
+        
+    </div>
+    <div *ngIf="activeTab === 4" class="content-container">
+        <div class="content-text">
+        <h4>Employee Information Management System</h4>
+        <p>
+            It is one of the crucial features of Human Resources Portals. HR portals store information about
+            employees. 
+        </p>
+        </div>
+      
+    </div>
+    <div *ngIf="activeTab === 5" class="content-container">
+        <div class="content-text">
+        <h4>Employee Benefits Management</h4>
+        <p>
+            An HR team composes and updates a list of benefits. On the other hand, employees can leave
+            requests for benefits on the tool. 
+        </p>
+        </div>
+       
+    </div>
+    <div *ngIf="activeTab === 6" class="content-container">
+        <div class="content-text">
+        <h4>Professional Development</h4>
+        <p>
+            It is one of the pivotal features of Human Resources Portals. The performance of the employees
+          
+        </p>
+        </div>
+    
+    </div>
+    </div>
+    </div>
+</div>
+</div>
