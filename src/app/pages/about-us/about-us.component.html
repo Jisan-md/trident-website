@@ -1,188 +1,525 @@
-<section class="head-img" style="background: url('/assets/about1.jpeg')no-repeat center center / cover;">
-    <div class="paraDiv row justify-content-center">
-     <h3 class="elementor-slide-heading text-white">Trident’s Story
-    </h3>
-     <p class="elementor-slide-description text-white">Trident is a global leader in digital transformation, helping organizations accelerate growth through innovative solutions. We provide expert consulting, implementation, and managed services powered by Microsoft Dynamics 365, ERP, CRM, Business Intelligence, and Cloud technologies. Our solutions optimize customer, employee, partner, and supplier experiences, leveraging data, AI, and RPA to drive efficiency and unlock new business potential.
-
-
-
-     </p>
- </div>
+<section
+  class="head-img"
+  style="background: url('/assets/about1.jpeg') no-repeat center center / cover"
+>
+  <div class="paraDiv row justify-content-center">
+    <h3 class="elementor-slide-heading text-white">Trident’s Story</h3>
+    <p class="elementor-slide-description text-white">
+      Trident is a global leader in digital transformation, helping
+      organizations accelerate growth through innovative solutions. We provide
+      expert consulting, implementation, and managed services powered by
+      Microsoft Dynamics 365, ERP, CRM, Business Intelligence, and Cloud
+      technologies. Our solutions optimize customer, employee, partner, and
+      supplier experiences, leveraging data, AI, and RPA to drive efficiency and
+      unlock new business potential.
+    </p>
+  </div>
 </section>
-
-
 <div class="container">
-    <div class="row">
-        <div class="col-lg-4">
-    <div class="tabs">
-        <div class="tab-item" [ngClass]="{'active-tab': activeTab === 1}" (click)="showContent(1)">
-            <label for="tab1">About Us</label>
+  <div class="row">
+    <div class="col-lg-4">
+      <div class="tabs">
+        <div
+          class="tab-item"
+          [ngClass]="{ 'active-tab': activeTab === 1 }"
+          (click)="showContent(1)"
+        >
+          <label for="tab1">About Us</label>
         </div>
-        <div class="tab-item" [ngClass]="{'active-tab': activeTab === 2}" (click)="showContent(2)">
-            <label for="tab2">About Trident GBS</label>
+        <div
+          class="tab-item"
+          [ngClass]="{ 'active-tab': activeTab === 2 }"
+          (click)="showContent(2)"
+        >
+          <label for="tab2">About Trident GBS</label>
         </div>
-        <div class="tab-item" [ngClass]="{'active-tab': activeTab === 3}" (click)="showContent(3)">
-            <label for="tab3">Locations</label>
+        <div
+          class="tab-item"
+          [ngClass]="{ 'active-tab': activeTab === 3 }"
+          (click)="showContent(3)"
+        >
+          <label for="tab3">Locations</label>
         </div>
-        <div class="tab-item" [ngClass]="{'active-tab': activeTab === 4}" (click)="showContent(4)">
-            <label for="tab4">Virtical Solution & Experience</label>
+        <div
+          class="tab-item"
+          [ngClass]="{ 'active-tab': activeTab === 4 }"
+          (click)="showContent(4)"
+        >
+          <label for="tab4">Virtical Solution & Experience</label>
         </div>
-        <div class="tab-item" [ngClass]="{'active-tab': activeTab === 5}" (click)="showContent(5)">
-            <label for="tab5">Our Partnership</label>
+        <div
+          class="tab-item"
+          [ngClass]="{ 'active-tab': activeTab === 5 }"
+          (click)="showContent(5)"
+        >
+          <label for="tab5">Our Partnership</label>
         </div>
-        <div class="tab-item" [ngClass]="{'active-tab': activeTab === 6}" (click)="showContent(6)">
-            <label for="tab6">Careers</label>
+        <div
+          class="tab-item"
+          [ngClass]="{ 'active-tab': activeTab === 6 }"
+          (click)="showContent(6)"
+        >
+          <label for="tab6">Careers</label>
         </div>
+      </div>
     </div>
-        </div>
-        <div class="col-lg-8">
-    <div class="content-section">
+    <div class="col-lg-8">
+      <div class="content-section">
         <div *ngIf="activeTab === 1" class="content-container">
-            <div class="content-text">
-                <h5 style="line-height: 1.5;"><b>Microsoft Solution Partner for Business Enterprises Applications - Dynamics 365 (D365 F&O and Business Central), Microsoft Azure and Power Platform
-                </b></h5>
-                <h4 class="mt-4"><b>The Binding Force </b></h4>
-                <p>
-                   <b> Achieving lasting success through a consistent focus on our customers and employees! </b><br><br>
+          <div class="content-text">
+            <h5 style="line-height: 1.5">
+              <b
+                >Microsoft Solution Partner for Business Enterprises
+                Applications - Dynamics 365 (D365 F&O and Business Central),
+                Microsoft Azure and Power Platform
+              </b>
+            </h5>
+            <h4 class="mt-4"><b>The Binding Force </b></h4>
+            <p>
+              <b>
+                Achieving lasting success through a consistent focus on our
+                customers and employees! </b
+              ><br /><br />
 
-                    Vision, mission and values provide the organizational fiber that connects people with common goals, not just financial, but around a purpose and a way of achieving that purpose. <br><br>
-                    
-                    The Vision, Mission, and Values are not just a written statement of our purpose and aspirations, but a way of life and the attributes by which we will all be measured and rewarded. <br><br>
-                    
-                    Our only purpose and aspiration is that we that we work with you to achieve your next success. Whatever, be our qualifications and credentials, we want you to know that our focus is on you: your business, your needs, your goals, and your future                   
-                </p>
+              Vision, mission and values provide the organizational fiber that
+              connects people with common goals, not just financial, but around
+              a purpose and a way of achieving that purpose. <br /><br />
 
-                <div class="faq-section">
-                    <div class="container mb-5">
-                      <div class="row align-items-center">
-                        <div class="col-12 order-1 order-lg-1">
-                          <div class="faq-content">
-                            <div class="section-title">
-                              <h2>Mission, Vision and Values</h2>
-                            </div>
-                  
-                            <h4 class="faq-header" (click)="toggleSection('mission')" [ngClass]="{'open': sections.mission}">Mission</h4>
-                            <div *ngIf="sections.mission" class="faq-content">
-                              <p>
-                                “To combine business process and human intellect to deliver strategy solutions where our deliverables are measured in terms of business benefit by our customers.” We at Trident are committed to Quality, Excellence and Innovation in every endeavour. We believe in combining the best people, processes and technology to achieve excellent results consistently.
+              The Vision, Mission, and Values are not just a written statement
+              of our purpose and aspirations, but a way of life and the
+              attributes by which we will all be measured and rewarded.
+              <br /><br />
 
-                              </p>
-                            </div>
-                  
-                            <h4 class="faq-header" (click)="toggleSection('vision')" [ngClass]="{'open': sections.vision}">Vision</h4>
-                            <div *ngIf="sections.vision" class="faq-content">
-                              <p>
-                                To be a trusted partner, committed to client’s success, helping organizations discover maximum value from their people and processes. <br><br>
+              Our only purpose and aspiration is that we that we work with you
+              to achieve your next success. Whatever, be our qualifications and
+              credentials, we want you to know that our focus is on you: your
+              business, your needs, your goals, and your future
+            </p>
 
-                                <b>Our customers perceive us as a fair and reliable partner, which helps us establish sustainable customer relations. We lead by example when it comes to quality of service and the way we approach people. We ensure our growth through above-average profits in our business areas.  </b>                            </p>
-                            </div>
-                  
-                            <h4 class="faq-header" (click)="toggleSection('values')" [ngClass]="{'open': sections.values}">Values</h4>
-                            <div *ngIf="sections.values" class="faq-content">
-                                <p>
-                                    “To combine business process and human intellect to deliver strategy solutions where our deliverables are measured in terms of business benefit by our customers.” We at Trident are committed to Quality, Excellence and Innovation in every endeavour. We believe in combining the best people, processes and technology to achieve excellent results consistently.
-                                    <br><br><b>Customer First </b><br>
-                                    
-                                    Our customers are the reason for our existence. We anticipate their needs and endeavor to meet and surpass their expectations.
-                                    
-                                    <br><br><b>Passion for Excellence </b><br>
-                                    
-                                    We, strive to attain individual and team excellence through a spirit of continuous learning, lofty standards, new ideals and a commitment to high levels of achievement. Taking complete ownership and delivering on commitments. Our customers are the reason for our existence. We anticipate their needs and endeavor to meet and surpass their expectations.
-                                    
-                                    <br><br><b> Honesty & Integrity </b><br>
-                                    
-                                    We, nurture a culture of spontaneity and mutual trust. Impeccable ethics and morals will be the cornerstone of all our interactions and relationships.
-                                    
-                                    <br><br><b>
-                                    Innovation </b><br>
-                                    
-                                    
-                                    We, continuously re-engineer our processes and mindsets and encourage individual creativity and improvisation in all our actions.
-                                    
-                                    <br><br><b>Social Responsibilities </b><br>
-                                    
-                                    We, recognize, abide by and add value to the social environment, while embracing our responsibilities as a good corporate citizen in every country we operate.
-                                    </p>                            </div>
-                  
-                            <h4 class="faq-header" (click)="toggleSection('leadership')" [ngClass]="{'open': sections.leadership}">Leadership Guidelines</h4>
-                            <div *ngIf="sections.leadership" class="faq-content">
-                           <p> Our leadership guidelines define our shared understanding of leadership ability. They are authoritative, and compliance with them can be demanded by everyone in the company.
-                             <br >
-                            <b class="mt-4"> Role models.</b>
-                             <br>
-                             <b class="mt-4">Entrepreneurship & Self Reliance.</b>
+            <div class="faq-section">
+              <div class="container mb-5">
+                <div class="row align-items-center">
+                  <div class="col-12 order-1 order-lg-1">
+                    <div class="faq-content">
+                      <div class="section-title">
+                        <h2>Mission, Vision and Values</h2>
+                      </div>
 
-                            <br>
-                            <b class="bclass">Teamwork.</b>
+                      <h4
+                        class="faq-header"
+                        (click)="toggleSection('mission')"
+                        [ngClass]="{ open: sections.mission }"
+                      >
+                        Mission
+                      </h4>
+                      <div *ngIf="sections.mission" class="faq-content">
+                        <p>
+                          “To combine business process and human intellect to
+                          deliver strategy solutions where our deliverables are
+                          measured in terms of business benefit by our
+                          customers.” We at Trident are committed to Quality,
+                          Excellence and Innovation in every endeavour. We
+                          believe in combining the best people, processes and
+                          technology to achieve excellent results consistently.
+                        </p>
+                      </div>
 
-<br>
-<b class="bclass">Communication.</b>
+                      <h4
+                        class="faq-header"
+                        (click)="toggleSection('vision')"
+                        [ngClass]="{ open: sections.vision }"
+                      >
+                        Vision
+                      </h4>
+                      <div *ngIf="sections.vision" class="faq-content">
+                        <p>
+                          To be a trusted partner, committed to client’s
+                          success, helping organizations discover maximum value
+                          from their people and processes. <br /><br />
 
+                          <b
+                            >Our customers perceive us as a fair and reliable
+                            partner, which helps us establish sustainable
+                            customer relations. We lead by example when it comes
+                            to quality of service and the way we approach
+                            people. We ensure our growth through above-average
+                            profits in our business areas.
+                          </b>
+                        </p>
+                      </div>
 
-                           </p>
-                            
-                            </div>
-                          </div>
-                        </div>
+                      <h4
+                        class="faq-header"
+                        (click)="toggleSection('values')"
+                        [ngClass]="{ open: sections.values }"
+                      >
+                        Values
+                      </h4>
+                      <div *ngIf="sections.values" class="faq-content">
+                        <p>
+                          “To combine business process and human intellect to
+                          deliver strategy solutions where our deliverables are
+                          measured in terms of business benefit by our
+                          customers.” We at Trident are committed to Quality,
+                          Excellence and Innovation in every endeavour. We
+                          believe in combining the best people, processes and
+                          technology to achieve excellent results consistently.
+                          <br /><br /><b>Customer First </b><br />
+
+                          Our customers are the reason for our existence. We
+                          anticipate their needs and endeavor to meet and
+                          surpass their expectations.
+
+                          <br /><br /><b>Passion for Excellence </b><br />
+
+                          We, strive to attain individual and team excellence
+                          through a spirit of continuous learning, lofty
+                          standards, new ideals and a commitment to high levels
+                          of achievement. Taking complete ownership and
+                          delivering on commitments. Our customers are the
+                          reason for our existence. We anticipate their needs
+                          and endeavor to meet and surpass their expectations.
+
+                          <br /><br /><b> Honesty & Integrity </b><br />
+
+                          We, nurture a culture of spontaneity and mutual trust.
+                          Impeccable ethics and morals will be the cornerstone
+                          of all our interactions and relationships.
+
+                          <br /><br /><b> Innovation </b><br />
+
+                          We, continuously re-engineer our processes and
+                          mindsets and encourage individual creativity and
+                          improvisation in all our actions.
+
+                          <br /><br /><b>Social Responsibilities </b><br />
+
+                          We, recognize, abide by and add value to the social
+                          environment, while embracing our responsibilities as a
+                          good corporate citizen in every country we operate.
+                        </p>
+                      </div>
+
+                      <h4
+                        class="faq-header"
+                        (click)="toggleSection('leadership')"
+                        [ngClass]="{ open: sections.leadership }"
+                      >
+                        Leadership Guidelines
+                      </h4>
+                      <div *ngIf="sections.leadership" class="faq-content">
+                        <p>
+                          Our leadership guidelines define our shared
+                          understanding of leadership ability. They are
+                          authoritative, and compliance with them can be
+                          demanded by everyone in the company.
+                          <br />
+                          <b class="mt-4"> Role models.</b>
+                          <br />
+                          <b class="mt-4">Entrepreneurship & Self Reliance.</b>
+
+                          <br />
+                          <b class="bclass">Teamwork.</b>
+
+                          <br />
+                          <b class="bclass">Communication.</b>
+                        </p>
                       </div>
                     </div>
                   </div>
-                  
+                </div>
+              </div>
             </div>
-          
+          </div>
         </div>
         <div *ngIf="activeTab === 2" class="content-container">
-            <div class="content-text">
-                <h4>Time and Attendance Management</h4>
-                <p>
-                    
-                    altering employees as per the schedule set by the company less confusing and manageable.
-                </p>
-            
+          <div class="content-text">
+            <h4><b>Trident Global Business Services</b></h4>
+            <p>
+              <b>Trident Global Business Services</b> is a business and
+              technology consulting arm of Trident Information Systems Pvt.
+              Ltd.. (Microsoft Gold Partner ) It is a global technology
+              consulting and digital solutions company helping more than 250
+              clients succeed in a converging world. With operations in India,
+              UAE & Africa we go the extra mile for our clients and accelerate
+              their digital transformation with Trident’s Mosaic platform
+              enabling their mobile, social, analytics, IoT and cloud journeys.
+            </p>
+            <h4><b>Offerings – Domain Led, Consulting Enabled</b></h4>
+            <p>
+              Trident Global Business Services focuses on developing deep and
+              differentiated capabilities that are aligned to its Agile
+              Framework. Its steadfast focus on delivering enduring value to its
+              clients has formed the bedrock of the company’s growth strategy.
+              The company has been successful in attaining differentiation in
+              niche areas and continues to gain competitive advantage to
+              strengthen its market standing.
+            </p>
+            <img src="/assets/gbs-1536x871.png" alt="" class="img-fluid mt-4" />
+          </div>
         </div>
-        
-    </div>
-    <div *ngIf="activeTab === 3" class="content-container">
-        <div class="content-text">
-        <h4>Finance Management</h4>
-        <p>
-            Finance management is an integrated part of an organization because it has to provide salaries
-          
-        </p>
+        <div *ngIf="activeTab === 3" class="content-container">
+          <div class="content-text">
+            <h4 style="color: #ff9800; font-size: 22px">
+              <b>Trident Locations</b>
+            </h4>
+            <p>
+              4 Locations in Pan India. Here you can find a concise list of
+              addresses and further contact details for all Trident locations
+              worldwide:
+            </p>
+            <div class="row mt-5">
+              <div class="col-6">
+                <div class="location-card">
+                  <h4><b>Delhi </b></h4>
+                  <p>
+                    M-31 A, ‘M’-Block Market <br />
+                    Greater Kailash Part -II <br />
+                    New Delhi 110048, India <br />
+                    Phone:- +91 11 6940 0449,6940 0450
+                  </p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="location-card">
+                  <h4><b>Kolkatta</b></h4>
+                  <p>
+                    Appejay House, <br />
+                    Block C, 8th Floor, 15 Park Street, <br />
+                    Kolkatta 700016, India
+                  </p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="location-card">
+                  <h4><b>Indore</b></h4>
+                  <p>
+                    Rajendra Bhawan , <br />
+                    8, Manorma Ganj <br />
+                    Indore 452001 <br />
+                    India
+                  </p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="location-card">
+                  <h4><b>Chattisgarh</b></h4>
+                  <p>
+                    6/J, Heavy Industrial Area, <br />
+                    Hatthkhoj,Bhiali, <br />
+                    Chattisgarh, 490024 <br />
+                    India
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        
-    </div>
-    <div *ngIf="activeTab === 4" class="content-container">
-        <div class="content-text">
-        <h4>Employee Information Management System</h4>
-        <p>
-            It is one of the crucial features of Human Resources Portals. HR portals store information about
-            employees. 
-        </p>
+        <div *ngIf="activeTab === 4" class="content-container">
+          <div class="content-text">
+            <!-- <h4></h4> -->
+            <div class="row mt-">
+              <div class="col-6">
+                <div class="location-card">
+                  <h4><b>CRM</b></h4>
+                  <p>
+                    MS D365 Sales <br />
+                    MS D365 Marketing
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="location-card">
+                  <h4><b>ERP</b></h4>
+                  <p>
+                    MS D365 Operations <br />
+                    MS D365 Business Central <br />
+                    Microsoft Dynamics AX <br />
+                    Microsoft Dynamics NAV
+                  </p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="location-card">
+                  <h4><b>Internet of Things (IoT) </b></h4>
+                  <p>
+                    Retail Supply Chain <br />
+                    Asset Management <br />
+                    Fleet Management <br />
+                    Energy Management
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-6">
+                <div class="location-card">
+                  <h4><b>Audit & Risk Analysis </b></h4>
+                  <p>
+                    ACL GRC <br />
+                    ACL Exchange <br />
+                    ACL Analytics
+                  </p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="location-card">
+                  <h4><b>Business Intelligence </b></h4>
+                  <p>
+                    MS Power BI <br />
+                    SPSS <br />
+                    Qlik Sense
+                  </p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="location-card">
+                  <h4><b>Retail Applications </b></h4>
+                  <p>
+                    LS Retail <br />
+                    D365 Retail
+                  </p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="location-card">
+                  <h4><b>DevOps </b></h4>
+                  <p>
+                    IBM <br />
+                    Microsoft <br />
+                    Dynatrace
+                  </p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="location-card">
+                  <h4><b>Mobile Apps </b></h4>
+                  <p>
+                    Sales Force Automation <br />
+                    Service Team Automation <br />
+                    Customer Loyalty Management <br />
+                    Mobile Inventory Management
+                  </p>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="location-card">
+                  <h4><b>Security </b></h4>
+                  <p>
+                    Application Security <br />
+                    End Point Security <br />
+                    Database Security
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="content-container">
+              <h4 class="textColor"><b>Key Features</b></h4>
+              <ul class="feature-list">
+                <li>
+                  <i class="fa fa-check"></i>250+ ERP & CRM Implementations on
+                  Microsoft Dynamics NAV, CRM & D365.
+                </li>
+                <li>
+                  <i class="fa fa-check"></i> Vertical Add-On Solution for ICD,
+                  Transport and Warehouse.
+                </li>
+                <li>
+                  <i class="fa fa-check"></i> IBM Partner since 2002 for Systems
+                  Engineering, ALM Solutions & DevOps.
+                </li>
+                <li>
+                  <i class="fa fa-check"></i>
+                  <a
+                    href="https://tridentinfo.com/engage-more-customers-on-your-ecommerce-platform/"
+                    >Microsoft Dynamics Partner</a
+                  >
+                  since 2003 with NAV, AX, CRM and D365.
+                </li>
+                <li>
+                  <i class="fa fa-check"></i> IoT solutions for Retail, Energy
+                  Management, and Industry 4.0.
+                </li>
+                <li>
+                  <i class="fa fa-check"></i> Consistent, Repeatable Customer
+                  Success with 95% Customer retention.
+                </li>
+                <li>
+                  <i class="fa fa-check"></i> Projects delivered across India,
+                  Dubai, Africa & Australia.
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      
-    </div>
-    <div *ngIf="activeTab === 5" class="content-container">
-        <div class="content-text">
-        <h4>Employee Benefits Management</h4>
-        <p>
-            An HR team composes and updates a list of benefits. On the other hand, employees can leave
-            requests for benefits on the tool. 
-        </p>
-        </div>
-       
-    </div>
-    <div *ngIf="activeTab === 6" class="content-container">
-        <div class="content-text">
-        <h4>Professional Development</h4>
-        <p>
-            It is one of the pivotal features of Human Resources Portals. The performance of the employees
-          
-        </p>
-        </div>
+        <div *ngIf="activeTab === 5" class="content-container">
+          <div class="content-text">
+            <div class="col-12 text-area">
+              <h5 class="textColor"><b>Microsoft Dynamics 365 Gold Certified Partner </b></h5>
+
+              <p>
+                As a longtime Microsoft Partner, our entire Microsoft portfolio
+                is supported by experienced, highly trained and certified
+                employees with outstanding expertise. Plus there’s our numerous
+                successful reference projects, because our expertise means our
+                customers can count on us when it comes to implementing
+                projects. That’s why Microsoft has awarded us certifications in
+                many areas – as backed up by our numerous Gold and Silver
+                competencies. These qualification ratings in the Microsoft
+                Partner Program show customers what they can expect: solid
+                advice and reliable implementation. Along the entire value-added
+                chain
+              </p>
+            </div>
+            <div class="col-12 text-area">
+              <h5 class="textColor"><b>Microsoft Dynamics President’s Club 2016 </b></h5>
+
+              <p>
+                Trident becomes a member of Microsoft Dynamics President’s Club
+                2016. The Microsoft Dynamics President’s Club honors
+                high-performing <a href="" class="textColor">Microsoft Dynamics partners</a> with commitments to
+                customers that are reflected in their business success and
+                growth. This prestigious group represents the top 5 percent of
+                Microsoft Dynamics partners worldwide. This acknowledgment came
+                during the Microsoft Worldwide Partner Conference (WPC) 2016.
+                Trident is a member of the Microsoft Dynamics President’s Club
+                for the second time.
+              </p>
+            </div>
+            <div class="col-12 text-area">
+                <h5 class="textColor"><b>IBM Gold Partner
+                </b></h5>
+
+<p>
+    As an IBM Gold Partner, we offer extensive expertise in IBM technologies for application development, testing, change & release management both for Embedded and Non Embedded System. The CoE of BI & Datawarehosuing leverages IBM technologies to develop and deliver market-leading, unified platform for developing Enterprise Reporting Applications, which present decision-making variables with easy-to-use interfaces, personalized relevance and timely delivery. The Cognos Center of Excellence is an industry-specific, reusable framework for easier project management and delivers customer centric BI solutions for many industries.</p>
+            </div>
+            <div class="col-12 text-area">
+                <h5 class="textColor"><b>LS Retail Diamond Partner
+
+                </b></h5>
+
+<p>    LS Retail is a world-leading provider of all-in-one business management software solutions for retail and hospitality companies of all sizes.
     
+    For over two decades, LS Retail has been developing market leading software solutions that are currently used by retailers and restaurateurs across 130 countries, with support that exceeds 270 certified Microsoft and LS Retail partners in over 80 countries.</p>            </div>
+          </div>
+          <div class="col-12 text-area">
+            <h5 class="textColor"><b>Galvanize (ACL) Partner
+            </b></h5>
+
+<p>
+    ACL Services Ltd. is the leading global provider of business assurance technology for audit and compliance professionals. Combining market-leading audit analytics software and professional services expertise, ACL solutions give auditors confidence in the effectiveness of internal controls and the integrity of the transactions underlying business operations.</p>        </div>
+
+        </div>
+        <div *ngIf="activeTab === 6" class="content-container">
+          <div class="content-text">
+            <h4>Professional Development</h4>
+            <p>
+              It is one of the pivotal features of Human Resources Portals. The
+              performance of the employees
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    </div>
-    </div>
-</div>
+  </div>
 </div>
