@@ -15,7 +15,7 @@
     </p>
   </div>
 </section>
-<div class="container">
+<div class="container mt-4">
   <div class="row">
     <div class="col-lg-4">
       <div class="tabs">
@@ -67,7 +67,7 @@
       <div class="content-section">
         <div *ngIf="activeTab === 1" class="content-container">
           <div class="content-text">
-            <h5 style="line-height: 1.5">
+            <h5 style="line-height: 1.5" class="textColor">
               <b
                 >Microsoft Solution Partner for Business Enterprises
                 Applications - Dynamics 365 (D365 F&O and Business Central),
@@ -97,7 +97,7 @@
             </p>
 
             <div class="faq-section">
-              <div class="container mb-5">
+              <div class="container mb-5" style="padding: 0;">
                 <div class="row align-items-center">
                   <div class="col-12 order-1 order-lg-1">
                     <div class="faq-content">
@@ -234,7 +234,7 @@
         </div>
         <div *ngIf="activeTab === 2" class="content-container">
           <div class="content-text">
-            <h4><b>Trident Global Business Services</b></h4>
+            <h4 class="textColor"><b>Trident Global Business Services</b></h4>
             <p>
               <b>Trident Global Business Services</b> is a business and
               technology consulting arm of Trident Information Systems Pvt.
@@ -245,7 +245,7 @@
               their digital transformation with Trident’s Mosaic platform
               enabling their mobile, social, analytics, IoT and cloud journeys.
             </p>
-            <h4><b>Offerings – Domain Led, Consulting Enabled</b></h4>
+            <h4 class="textColor mt-4"><b>Offerings – Domain Led, Consulting Enabled</b></h4>
             <p>
               Trident Global Business Services focuses on developing deep and
               differentiated capabilities that are aligned to its Agile
@@ -269,150 +269,176 @@
               worldwide:
             </p>
             <div class="row mt-5">
-              <div class="col-6">
-                <div class="location-card">
-                  <h4><b>Delhi </b></h4>
-                  <p>
-                    M-31 A, ‘M’-Block Market <br />
-                    Greater Kailash Part -II <br />
-                    New Delhi 110048, India <br />
-                    Phone:- +91 11 6940 0449,6940 0450
-                  </p>
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                  <div class="location-card">
+                    <h4 class="textColor">
+                      <b>
+                        <i class="fa fa-map-marker" aria-hidden="true" style="margin-right: 10px;"></i>Delhi
+                      </b>
+                    </h4>
+                    <p>
+                      M-31 A, ‘M’-Block Market <br />
+                      Greater Kailash Part -II <br />
+                      New Delhi 110048, India <br />
+                      Phone: +91 11 6940 0449, 6940 0450
+                    </p>
+                  </div>
+                </div>
+              
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                  <div class="location-card">
+                    <h4 class="textColor">
+                      <b>
+                        <i class="fa fa-map-marker" aria-hidden="true" style="margin-right: 10px;"></i>Kolkatta
+                      </b>
+                    </h4>
+                    <p>
+                      Appejay House, <br />
+                      Block C, 8th Floor, 15 Park Street, <br />
+                      Kolkatta 700016, India
+                    </p>
+                  </div>
+                </div>
+              
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                  <div class="location-card">
+                    <h4 class="textColor">
+                      <b>
+                        <i class="fa fa-map-marker" aria-hidden="true" style="margin-right: 10px;"></i>Indore
+                      </b>
+                    </h4>
+                    <p>
+                      Rajendra Bhawan, <br />
+                      8, Manorma Ganj <br />
+                      Indore 452001 <br />
+                      India
+                    </p>
+                  </div>
+                </div>
+              
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                  <div class="location-card">
+                    <h4 class="textColor">
+                      <b>
+                        <i class="fa fa-map-marker" aria-hidden="true" style="margin-right: 10px;"></i>Chattisgarh
+                      </b>
+                    </h4>
+                    <p>
+                      6/J, Heavy Industrial Area, <br />
+                      Hatthkhoj, Bhiali, <br />
+                      Chattisgarh 490024 <br />
+                      India
+                    </p>
+                  </div>
                 </div>
               </div>
-              <div class="col-6">
-                <div class="location-card">
-                  <h4><b>Kolkatta</b></h4>
-                  <p>
-                    Appejay House, <br />
-                    Block C, 8th Floor, 15 Park Street, <br />
-                    Kolkatta 700016, India
-                  </p>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="location-card">
-                  <h4><b>Indore</b></h4>
-                  <p>
-                    Rajendra Bhawan , <br />
-                    8, Manorma Ganj <br />
-                    Indore 452001 <br />
-                    India
-                  </p>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="location-card">
-                  <h4><b>Chattisgarh</b></h4>
-                  <p>
-                    6/J, Heavy Industrial Area, <br />
-                    Hatthkhoj,Bhiali, <br />
-                    Chattisgarh, 490024 <br />
-                    India
-                  </p>
-                </div>
-              </div>
-            </div>
+              
           </div>
         </div>
         <div *ngIf="activeTab === 4" class="content-container">
           <div class="content-text">
             <!-- <h4></h4> -->
-            <div class="row mt-">
-              <div class="col-6">
-                <div class="location-card">
-                  <h4><b>CRM</b></h4>
-                  <p>
-                    MS D365 Sales <br />
-                    MS D365 Marketing
-                  </p>
+            <div class="row ">
+                <!-- CRM -->
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                  <div class="location-card">
+                    <h4 class="textColor"><b>CRM</b></h4>
+                    <p>MS D365 Sales <br> MS D365 Marketing</p>
+                  </div>
+                </div>
+              
+                <!-- ERP -->
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                  <div class="location-card">
+                    <h4 class="textColor"><b>ERP</b></h4>
+                    <p>
+                      MS D365 Operations <br>
+                      MS D365 Business Central <br>
+                      Microsoft Dynamics AX <br>
+                      Microsoft Dynamics NAV
+                    </p>
+                  </div>
+                </div>
+              
+                <!-- Internet of Things (IoT) -->
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                  <div class="location-card">
+                    <h4 class="textColor"><b>Internet of Things (IoT)</b></h4>
+                    <p>
+                      Retail Supply Chain <br>
+                      Asset Management <br>
+                      Fleet Management <br>
+                      Energy Management
+                    </p>
+                  </div>
+                </div>
+              
+                <!-- Audit & Risk Analysis -->
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                  <div class="location-card">
+                    <h4 class="textColor"><b>Audit & Risk Analysis</b></h4>
+                    <p>
+                      ACL GRC <br>
+                      ACL Exchange <br>
+                      ACL Analytics
+                    </p>
+                  </div>
+                </div>
+              
+                <!-- Business Intelligence -->
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                  <div class="location-card">
+                    <h4 class="textColor"><b>Business Intelligence</b></h4>
+                    <p>
+                      MS Power BI <br>
+                      SPSS <br>
+                      Qlik Sense
+                    </p>
+                  </div>
+                </div>
+              
+                <!-- Retail Applications -->
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                  <div class="location-card">
+                    <h4 class="textColor"><b>Retail Applications</b></h4>
+                    <p>LS Retail <br> D365 Retail</p>
+                  </div>
+                </div>
+              
+                <!-- DevOps -->
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                  <div class="location-card">
+                    <h4 class="textColor"><b>DevOps</b></h4>
+                    <p>IBM <br> Microsoft <br> Dynatrace</p>
+                  </div>
+                </div>
+              
+                <!-- Mobile Apps -->
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                  <div class="location-card">
+                    <h4 class="textColor"><b>Mobile Apps</b></h4>
+                    <p>
+                      Sales Force Automation <br>
+                      Service Team Automation <br>
+                      Customer Loyalty Management <br>
+                      Mobile Inventory Management
+                    </p>
+                  </div>
+                </div>
+              
+                <!-- Security -->
+                <div class="col-lg-6 col-md-6 col-sm-12 mb-4">
+                  <div class="location-card">
+                    <h4 class="textColor"><b>Security</b></h4>
+                    <p>
+                      Application Security <br>
+                      End Point Security <br>
+                      Database Security
+                    </p>
+                  </div>
                 </div>
               </div>
-
-              <div class="col-6">
-                <div class="location-card">
-                  <h4><b>ERP</b></h4>
-                  <p>
-                    MS D365 Operations <br />
-                    MS D365 Business Central <br />
-                    Microsoft Dynamics AX <br />
-                    Microsoft Dynamics NAV
-                  </p>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="location-card">
-                  <h4><b>Internet of Things (IoT) </b></h4>
-                  <p>
-                    Retail Supply Chain <br />
-                    Asset Management <br />
-                    Fleet Management <br />
-                    Energy Management
-                  </p>
-                </div>
-              </div>
-
-              <div class="col-6">
-                <div class="location-card">
-                  <h4><b>Audit & Risk Analysis </b></h4>
-                  <p>
-                    ACL GRC <br />
-                    ACL Exchange <br />
-                    ACL Analytics
-                  </p>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="location-card">
-                  <h4><b>Business Intelligence </b></h4>
-                  <p>
-                    MS Power BI <br />
-                    SPSS <br />
-                    Qlik Sense
-                  </p>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="location-card">
-                  <h4><b>Retail Applications </b></h4>
-                  <p>
-                    LS Retail <br />
-                    D365 Retail
-                  </p>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="location-card">
-                  <h4><b>DevOps </b></h4>
-                  <p>
-                    IBM <br />
-                    Microsoft <br />
-                    Dynatrace
-                  </p>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="location-card">
-                  <h4><b>Mobile Apps </b></h4>
-                  <p>
-                    Sales Force Automation <br />
-                    Service Team Automation <br />
-                    Customer Loyalty Management <br />
-                    Mobile Inventory Management
-                  </p>
-                </div>
-              </div>
-              <div class="col-6">
-                <div class="location-card">
-                  <h4><b>Security </b></h4>
-                  <p>
-                    Application Security <br />
-                    End Point Security <br />
-                    Database Security
-                  </p>
-                </div>
-              </div>
-            </div>
+              
             <div class="content-container">
               <h4 class="textColor"><b>Key Features</b></h4>
               <ul class="feature-list">
@@ -512,11 +538,53 @@
         </div>
         <div *ngIf="activeTab === 6" class="content-container">
           <div class="content-text">
-            <h4>Professional Development</h4>
-            <p>
-              It is one of the pivotal features of Human Resources Portals. The
-              performance of the employees
-            </p>
+            
+
+<!--client section start-->
+<div class="container ">
+    <div class="col-12 mt-">
+      <p style="line-height: 30px">
+        A day in life at Intellicept comprises of fun, challenge, and
+        appreciation. Our employees are our wealth, and we invest in their
+        career. The focus of our workforce is “Work Hard, Play Harder”.
+      </p>
+    </div>
+  </div>
+  
+  
+  <div class="container">
+      <div class="row ">
+        <div class=" col-lg-6  d-flex justify-content-center align-items-center">
+    
+          <div class="contact-item">
+            <div class="section-title text-center ">
+              <h2><b>
+                  Talk to Our
+                  <span style="color: #f39c12">Experts</span></b>
+              </h2>
+              <p style="text-align: center;">
+                We will contact you within 48 hours after receiving your request.
+              </p>
+            </div>
+            <div routerLink="/contact-us" class="section-title " style="cursor: pointer" tabindex="0">
+              <div class="section-title d-flex justify-content-center align-items-center" onclick="window.location.href='/contact-us'">
+                <img src="assets/Untitled-2.png" alt="image" />
+              </div>
+              <h4 style="margin-left: -1.5rem; color: #f39c12; text-align: center; font-weight: 600;">
+                Learn More
+              </h4>
+            </div>
+          </div>
+    
+        </div>
+        <div class=" col-lg-6">
+          <div class="card border-0 shadow-sm text-white">
+            <img src="/assets/Leave_a_message.jpg" alt="" class="img-fluid rounded shadow-sm" />
+          </div>
+        </div>
+      </div>
+    
+    </div>
           </div>
         </div>
       </div>
