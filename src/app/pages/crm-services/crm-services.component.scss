@@ -235,7 +235,7 @@ h4{
   
   .card-icon {
     font-size: 50px;
-    color: #d89b3f;
+    color:  rgba(255, 165, 0, 0.8);
     margin-bottom: 15px;
   }
   
@@ -254,7 +254,7 @@ h4{
   
   .card-button {
     
-    color: #d89b3f;
+    color:  rgba(255, 165, 0, 0.8);
     text-decoration: none;
     padding: 10px 15px;
     border-radius: 5px;
@@ -276,7 +276,7 @@ h4{
   /* Case Studies Section */
 .section-case-studies {
     padding: 50px 0;
-    background-color: #ffe0b2; 
+    background-color:  #ffe0b2; 
   }
   
   .container-case-studies {
@@ -359,7 +359,7 @@ h4{
   /* CTA Section */
 .cta-section {
     padding: 50px 0;
-    background-color: #f9f9f9; /* Light background color to match your theme */
+    background-color: #f9f9f9; 
     text-align: center;
   }
   
@@ -371,7 +371,7 @@ h4{
   
   .cta-heading {
     font-size: 32px;
-    color: #333; /* Adjusted to match your theme */
+    color: #333; 
     margin-bottom: 20px;
   }
   
@@ -382,7 +382,7 @@ h4{
   }
   
   .cta-spacer {
-    height: 20px; /* Space between text and button */
+    height: 20px;
   }
   
   .cta-button-wrapper {
@@ -391,7 +391,7 @@ h4{
   }
   
   .cta-button {
-    background-color: rgba(255, 165, 0, 0.8); /* Blue background for the button */
+    background-color: rgba(255, 165, 0, 0.8); 
     color: #fff;
     padding: 12px 30px;
     text-decoration: none;
@@ -401,7 +401,7 @@ h4{
   }
   
   .cta-button:hover {
-    background-color: #d89b3f; /* Darker shade on hover */
+    background-color: #d89b3f;
   }
   
   @media (max-width: 768px) {
