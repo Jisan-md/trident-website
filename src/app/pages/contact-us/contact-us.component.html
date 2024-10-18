@@ -1,1 +1,136 @@
-<p>contact-us works!</p>
+<section class="hero-section ptb-100" id="demo5"
+    style="background: url('assets/get_in_touch.jpg')no-repeat center center / cover">
+
+    <div class="hero-bottom-shape-two"></div>
+    <div class="col-12">
+        <div class="page-header-content  text-center ">
+            <h1 class="text-white text-shadow-black mb-0">Contact Us</h1>
+            <!-- <a href="/idmx1"><button class="btn btn-success" >Schedule Demo</button></a> -->
+
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<div class="contact-section ptb-100">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-12 col-lg-6">
+                <div class="contact-item">
+                    <div class="section-title">
+                        <h2>Leave A Message</h2>
+                        <p>We will contact you within 48 hours after receiving your request.</p>
+                    </div>
+                    <form [formGroup]="form" class="contact-form">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label for="name">Your Name *</label>
+                                    <input type="text" formControlName="name" class="form-control" id="name" required autocomplete="off" placeholder="Enter your name">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label for="phone_number">Phone Number *</label>
+                                    <input type="text" formControlName="phone" class="form-control" id="phone_number" required autocomplete="off" placeholder="Enter your phone number">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" formControlName="email" class="form-control" id="email" required autocomplete="off" placeholder="Enter your email">
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label for="query_type">Query Type *</label>
+                                    <select formControlName="query_type" class="form-control" id="query_type" required>
+                                        <option value="Enquiry">Enquiry</option>
+                                        <option value="Support">Support</option>
+                                        <option value="Sales">Sales</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 col-md-12 col-lg-12">
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea formControlName="message" id="message" class="form-control" cols="30" rows="5" required placeholder="Enter your message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 text-center">
+                                <button type="submit" class="btn  mt-3 w-100">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <div class="contact-item-image text-center">
+                    <img src="assets/Leave_a_message.jpg" alt="image" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Contact Info -->
+<div class="contact-info-section pt-75 pb-75 bg-fbfbfb">
+    <div class="container">
+        <div class="row justify-content-center">
+            <!-- Location Box -->
+            <div class="col-lg-4 col-sm-6 col-md-6 col-12">
+                <div class="contact-info-box">
+                    <img src="assets/Location.jpg" alt="Location">
+                    <div class="content">
+                        <h4>Location Here</h4>
+                        <p style="font-size: 15px;">
+                            <i class='fas fa-map-marker-alt'></i> 112 W. 34th Street, 17th and 18th Floors, New York,
+                            New York 10120
+                        </p>
+                        <p style="font-size: 15px;">
+                            <i class='fas fa-map-marker-alt'></i> 6 Moyse Place, Suite No. 101, Edison, NJ 08820 USA
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call Box -->
+            <div class="col-lg-4 col-sm-6 col-md-6 col-12">
+                <div class="contact-info-box">
+                    <img src="assets/Call_me.jpg" alt="Call">
+                    <div class="content">
+                        <h4>Call Here</h4>
+                        <p>
+                            <i class='fas fa-phone-alt'></i>
+                            <a href="tel:+17323180550">+1 (732) 318-0550</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Email Box -->
+            <div class="col-lg-4 col-sm-6 col-md-6 col-12">
+                <div class="contact-info-box">
+                    <img src="assets/email.jpg" alt="Email">
+                    <div class="content">
+                        <h4>Email Here</h4>
+                        <p>
+                            <i class='fas fa-envelope-open'></i>
+                            <a href="mailto:support@mckinsol.com">support&#64;mckinsol.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container" style="margin-bottom: 20px">
+    <div class="col-12">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.5193092910167!2d-74.37105342427503!3d40.59636464468706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c3b7249da11f39%3A0x7bdc08ed6e653350!2s6%20Moyse%20Pl%20%23102%2C%20Edison%2C%20NJ%2008820%2C%20USA!5e0!3m2!1sen!2sin!4v1700240703242!5m2!1sen!2sin"
+            width="100%" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            style="  box-shadow: rgba(19, 81, 168, 0.3) 0px 1px 2px 0px, rgba(19, 81, 168, 0.15) 0px 2px 6px 2px;
+  "></iframe>
+    </div>
+</div>

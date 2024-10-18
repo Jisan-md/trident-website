@@ -12,7 +12,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TabsModule } from 'ngx-bootstrap/tabs';
 import { NgbAccordionModule ,NgbModule } from '@ng-bootstrap/ng-bootstrap';
-
+import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './pages/home/home.component';
 import { IntelligentDataMigrationComponent } from './pages/intelligent-data-migration/intelligent-data-migration.component';
 import { IsoxComponent } from './pages/isox/isox.component';
@@ -31,7 +31,6 @@ import { TrainingComponent } from './pages/training/training.component';
 import { ErpServicesComponent } from './pages/erp-services/erp-services.component';
 import { CrmServicesComponent } from './pages/crm-services/crm-services.component';
 import { StaffAugmentationServicesComponent } from './pages/staff-augmentation-services/staff-augmentation-services.component';
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,7 +53,8 @@ import { StaffAugmentationServicesComponent } from './pages/staff-augmentation-s
     TrainingComponent,
     ErpServicesComponent,
     CrmServicesComponent,
-    StaffAugmentationServicesComponent
+    StaffAugmentationServicesComponent,
+    
 
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA,NO_ERRORS_SCHEMA],
@@ -62,7 +62,7 @@ import { StaffAugmentationServicesComponent } from './pages/staff-augmentation-s
   imports: [
     BrowserModule,
     AppRoutingModule, MatTabsModule, BrowserAnimationsModule, TabsModule.forRoot(), NgbAccordionModule, MatExpansionModule,
-    ReactiveFormsModule,
+    ReactiveFormsModule,FormsModule,
     AppRoutingModule,MatTabsModule,BrowserAnimationsModule,TabsModule.forRoot()
   ],
   providers: [],
