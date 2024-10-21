@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './erp-services.component.scss'
 })
 export class ErpServicesComponent {
-
+  activeTab: number = 1;  
+  showContent(tabNumber: number) {
+   this.activeTab = tabNumber;
+ }
 }
