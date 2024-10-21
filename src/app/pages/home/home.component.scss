@@ -260,9 +260,8 @@ p {
   font-size: 15px;
   font-weight: 500;
   line-height: 22px;
-  background:transparent; 
-  color: #ff9800;
-  border: 1px solid #ff9800;
+  background:rgba(255, 165, 0, 0.8); 
+  color: white;
   border-radius: 5px;
   padding: 10px 20px;
   cursor: pointer;
@@ -270,7 +269,6 @@ p {
 }
 
 .btn-ege:hover {
-  // background: #e67e22; 
   border: 1px solid #fff;
   color: #fff;
 }
