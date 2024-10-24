@@ -43,7 +43,7 @@
   .erp-heading{
     color: #ff9800;
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.8rem;
     
   }
   .partner-paragraph{
@@ -55,6 +55,12 @@
     justify-content: space-around;
     padding: 10px 0; 
     background-color: #ffffff;
+}
+@media (max-width: 768px) {
+    .tabs {
+        // flex-direction: column;
+        overflow-x: scroll;
+    }
 }
 
 .tab-item {
@@ -267,7 +273,7 @@ li{
     padding: 40px;
     background-color: #f0e68c;
     text-align: center;
-    font-family: Arial, sans-serif;
+    
   }
    
   .column {
@@ -293,18 +299,19 @@ li{
   .button {
     display: inline-block;
     padding: 12px 24px;
-    background:transparent;
-    border: 2px solid #ff9800;
+    background:#ff9800;
+    // border: 2px solid #555;
     color: #555;
     font-size: 1.1rem;
-    border-radius: 4px;
+    border-radius: 50px;
     text-decoration: none;
     transition: background-color 0.3s ease;
   }
   
   .button:hover {
-    background-color: #ff9800;
+    background:transparent;
     text-decoration: none;
+    color: #333;
   }
   
   .align-center {

@@ -22,7 +22,7 @@ import{ ErpServicesComponent} from './pages/erp-services/erp-services.component'
 import{ CrmServicesComponent} from './pages/crm-services/crm-services.component';
 import{ StaffAugmentationServicesComponent} from './pages/staff-augmentation-services/staff-augmentation-services.component';
 
-
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 
 
@@ -51,6 +51,8 @@ const routes: Routes = [
   { path: 'erp-services', component: ErpServicesComponent },
   { path: 'crm-services', component: CrmServicesComponent },
   { path: 'staff-augmentation', component: StaffAugmentationServicesComponent },
+
+  { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({

@@ -1,0 +1,54 @@
+.head-img {
+    height: 90vh;
+  }
+  
+  .paraDiv {
+    background: rgba(255, 165, 0, 0.8); 
+    padding: 25px;
+    margin-left: 10%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    max-width: 37%;
+    text-align: left;
+    position: relative;
+    top: 180px;
+    
+  }
+  
+  .paraDiv h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #ff9800; 
+  }
+  @media (max-width: 768px) {
+    .col-md-6 {
+        margin-bottom: 20px;
+    }
+  
+    .paraDiv {
+        max-width: 70%;
+        top: 115px;
+  
+    }
+  }
+  .paraDiv p {
+    margin-bottom: 0;
+    line-height: 1.6;
+    color: #f0e68c; 
+  }
+  
+p{
+    line-height: 1.9;
+}
+.textcolor{
+    color: #ff9800;
+    font-weight: 600;
+}
+strong {
+    color: #ff9800;
+}
+a{
+    text-decoration: none;
+    color: #ff5722;
+}

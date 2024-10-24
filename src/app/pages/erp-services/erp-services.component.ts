@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ErpServicesComponent {
   activeTab: number = 1;  
+ 
   showContent(tabNumber: number) {
    this.activeTab = tabNumber;
  }

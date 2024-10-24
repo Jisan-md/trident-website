@@ -31,6 +31,7 @@ import { TrainingComponent } from './pages/training/training.component';
 import { ErpServicesComponent } from './pages/erp-services/erp-services.component';
 import { CrmServicesComponent } from './pages/crm-services/crm-services.component';
 import { StaffAugmentationServicesComponent } from './pages/staff-augmentation-services/staff-augmentation-services.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -54,6 +55,7 @@ import { StaffAugmentationServicesComponent } from './pages/staff-augmentation-s
     ErpServicesComponent,
     CrmServicesComponent,
     StaffAugmentationServicesComponent,
+    NotFoundComponent,
     
 
   ],
